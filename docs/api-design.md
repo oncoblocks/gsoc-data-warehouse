@@ -166,20 +166,7 @@ PUT /items/id_123 { "meta": { "published": true } }
 
 
 ## Caching
-Most responses return an ETag header. Many responses also return a Last-Modified header. You can use the values of these headers to make subsequent requests to those resources using the If-None-Match and If-Modified-Since headers, respectively. If the resource has not changed, the server will return a 304 Not Modified. Also note: making a conditional request and receiving a 304 response does not count against your rate limit, so we encourage you to use it whenever possible.
-
-`Cache-Control: private, max-age=60`
-`ETag: hash of contents`
-`Last-Modified: updated_at`
-
-Vary header
-The following headers must be declared in Vary:
-`Vary: Accept, Authorization, Cookie`
-
-Any one of these headers can change the representation of the data and should invalidate a cached version. Users might be using different accounts to do admin, all with different privileges and resource visibility.
-Accept can alter the returned representation.
-
-Reference: https://www.mnot.net/cache_docs/
+TBD
 
 ## Compression
 All responses should support gzip.
