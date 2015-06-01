@@ -2,22 +2,112 @@
 layout: default
 ---
 
-<div class="home">
+<section class="header-10-sub v-center">
+    <div class="background">&nbsp;</div>
+    <div>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Welcome to Magpie</h1>
+                <p>
+                    The Oncoblocks Genomic Data Warehouse Project for Google Summer of Code 2015.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--<a class="control-btn fui-arrow-down" href="#"> </a>-->
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<section id="about" class="content-26 bg-clouds">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>About the project</h3>
+                <p class="lead">Our goal is to create a specification and refernece data warehouse solution for processed genomic data,
+                    helping you consolidate, annotate, and share your data easier.</p>
+            </div>
+        </div>
+        <div class="row features">
+            <div class="col-sm-3">
+                <img src="{{ site.baseurl }}/static/images/database-128.png" alt="" width="128" height="128">
+                <h6>Modular and Scalable</h6>
+                Create your own data warehouse using the Oncoblocks data model, or bootstrap one or more RDBMS or NoSQL data sources to our demo implementation.
+            </div>
+            <div class="col-sm-4 col-sm-offset-1">
+                <img src="{{ site.baseurl }}/static/images/code-128.png" alt="" width="128" height="128">
+                <h6>RESTful API</h6>
+                Access your data through a flexible and performant REST API, with customizable features you can tailor to your organization's needs.
+            </div>
+            <div class="col-sm-3 col-sm-offset-1">
+                <img src="{{ site.baseurl }}/static/images/github-128.png" alt="" width="128" height="128">
+                <h6>Free and Open-Source</h6>
+                Magpie is built with free and open source technologies, and can be integrated with other tools from the Oncoblocks platform.
+            </div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h4>Learn more about Project Magpie <a href="{{ site.baseurl }}/welcome-to-magpie">here</a>.</h4>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section id="team" class="crew-1">
+    <div class="container">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        <h3 style="text-align:center">Team Members</h3>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <div class="members">
+            <div class="member-wrapper">
+                <div class="member">
+                    <div class="photo-wrapper">
+                        <img class="img-rounded" src="{{ site.baseurl }}/static/images/tluo.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">Tewei Luo</div>
+                        University of Hong Kong <br/><br/>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="member-wrapper">
+                <div class="member">
+                    <div class="photo-wrapper">
+                        <img class="img-rounded" src="{{ site.baseurl }}/static/images/woemler.jpeg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">Will Oemler</div>
+                        Blueprint Medicines <br/><br/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-wrapper">
+                <div class="member">
+                    <div class="photo-wrapper">
+                        <img class="img-rounded" src="{{ site.baseurl }}/static/images/bgross.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">Benjamin Gross</div>
+                        Memorial Sloan Kettering Cancer Center
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-wrapper">
+                <div class="member">
+                    <div class="photo-wrapper">
+                        <img class="img-rounded" src="{{ site.baseurl }}/static/images/ecerami.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">Ethan Cerami</div>
+                        Dana-Farber Cancer Instititue <br/><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--/.container-->
+</section>

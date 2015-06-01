@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section class="blog-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                {{ content }}
+            </div>
+            <div class="col-sm-3 col-sm-offset-2">
+                <div class="related-articles">
+                    <h6>Recent Posts</h6>
+                    <ul>
+                        {% for post in site.posts %}
+                            <li>
+                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                                <div>{{ post.date | date: "%b %-d, %Y" }}</div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
