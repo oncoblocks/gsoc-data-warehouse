@@ -1,5 +1,4 @@
-/Users/tewei/Dropbox/Work/soc2015/magpie/master/src/main/java/org/oncoblocks/magpie/rest/controllers/CopyNumberGeneCentricController.java
-/Users/tewei/Dropbox/Work/soc2015/magpie/master/src/main/java/org/oncoblocks/magpie/rest/service/CopyNumberGeneCentricService.java
-/Users/tewei/Dropbox/Work/soc2015/magpie/master/src/main/java/org/oncoblocks/magpie/rest/MagpieApplication.java
-/Users/tewei/Dropbox/Work/soc2015/magpie/master/src/main/java/org/oncoblocks/magpie/rest/test/Test.java
-/Users/tewei/Dropbox/Work/soc2015/magpie/master/src/main/java/org/oncoblocks/magpie/rest/models/CopyNumberGeneCentric.java
+/Users/tewei/Dropbox/Work/soc2015/magpie/test/src/main/java/org/oncoblocks/magpie/rest/service/CopyNumberGeneCentricService.java
+/Users/tewei/Dropbox/Work/soc2015/magpie/test/src/main/java/org/oncoblocks/magpie/rest/MagpieApplication.java
+/Users/tewei/Dropbox/Work/soc2015/magpie/test/src/main/java/org/oncoblocks/magpie/rest/controllers/CopyNumberGeneCentricController.java
+/Users/tewei/Dropbox/Work/soc2015/magpie/test/src/main/java/org/oncoblocks/magpie/rest/models/CopyNumberGeneCentric.java

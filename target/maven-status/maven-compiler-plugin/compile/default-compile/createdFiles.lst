@@ -1,5 +1,4 @@
 org/oncoblocks/magpie/rest/models/CopyNumberGeneCentric.class
-org/oncoblocks/magpie/rest/test/Test.class
 org/oncoblocks/magpie/rest/controllers/CopyNumberGeneCentricController.class
 org/oncoblocks/magpie/rest/service/CopyNumberGeneCentricService.class
 org/oncoblocks/magpie/rest/MagpieApplication.class

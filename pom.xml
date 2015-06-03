@@ -17,51 +17,39 @@
 
     <build>
         <finalName>${project.artifactId}-${project.version}</finalName>
-        <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                 </plugin>
+                <!--<plugin>-->
+                    <!--<groupId>org.apache.maven.plugins</groupId>-->
+                    <!--<artifactId>maven-jar-plugin</artifactId>-->
+                    <!--<configuration>-->
+                        <!--<archive>-->
+                            <!--<manifest>-->
+                                <!--<addDefaultImplementationEntries>true</addDefaultImplementationEntries>-->
+                                <!--<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
+                            <!--</manifest>-->
+                        <!--</archive>-->
+                    <!--</configuration>-->
+                <!--</plugin>-->
             </plugins>
-        </pluginManagement>
     </build>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.3.RELEASE</version>
+        <version>1.1.12.RELEASE</version>
     </parent>
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>1.4.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.2.4</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-        </dependency>
-
-        <!-- Spring -->
+        <!--spring-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
         <!--mongodb-->
@@ -69,12 +57,6 @@
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>
             <version>2.13.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jongo</groupId>
-            <artifactId>jongo</artifactId>
-            <version>1.2</version>
         </dependency>
 
         <!--testing-->
@@ -86,5 +68,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
 </project>
