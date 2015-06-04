@@ -12,10 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/copynumbergenecentric")
 public class CopyNumberGeneCentricController {
+
     @RequestMapping("")
     public String findCopyNumberGeneCentricByGeneId(@RequestParam(value = "geneId") Integer geneId){
 
         return String.format("Test: Input geneId is %d\n", geneId);
     }
+
 }
 

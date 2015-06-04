@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Gene",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "entrezGeneId": {
+      "type": "integer"
+    }
+  }
+}

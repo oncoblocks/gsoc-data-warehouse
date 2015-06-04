@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Mutation",
+  "description": "",
+  "type": "object",
+  "properties": {
+
+    "entrezGeneId": {
+      "description": "Entrez GeneId of gene where this mutation is",
+      "type": "integer"
+    }
+  }
+}

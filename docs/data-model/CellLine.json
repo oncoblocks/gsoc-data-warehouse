@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CellLine",
+  "description": "Cell line as physical entity, with information on source vendor/lab.",
+  "type": "property",
+  "properties": {
+    "cellLineName": {
+      "description": "Name and unique identifier of cell line.",
+      "type": "string"
+    },
+
+    "gender": {
+      "description": "Gender of the donor of this cell line.",
+      "type": "string"
+    },
+
+    "source": {
+      "description": "Vendor or laboratory this cell line comes from.",
+      "type": "string"
+    },
+
+    "primarySite": {
+      "description": "",
+      "type": ""
+    }
+
+  }
+}

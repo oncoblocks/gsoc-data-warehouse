@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CellLineSource",
+  "description": "Source cell line such as HEK-TE",
+  "type": "object",
+  "properties": {
+    "cellLineName": {
+      "description": "Name and unique identifier of source cell line",
+      "type": "string"
+    }
+  }
+}
