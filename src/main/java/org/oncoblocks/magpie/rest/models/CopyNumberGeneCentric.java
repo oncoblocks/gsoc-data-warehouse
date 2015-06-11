@@ -1,19 +1,20 @@
 package org.oncoblocks.magpie.rest.models;
 
-/**
- * Created by tewei on 5/31/15.
- */
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class CopyNumberGeneCentric {
     private Integer entrezGeneId;
     private String geneSymbol;
-    private Integer chromosome;
+    private String chromosome;
     private Integer chromosomeStartPosition;
     private Integer chromosomeEndPosition;
+    private String sampleId;
+    private String experimentId;
+    private Double copyNumberValue;
     // The following variables are normalized copy number signals
     // Variable names follow CCLE nomenclature
-    private Float LOUNH91_LUNG;
-    private Float T98G_CENTRAL_NERVOUS_SYSTEM;
-    private Float IPC298_SKIN;
+
 
     public Integer getEntrezGeneId() {
         return entrezGeneId;
@@ -31,11 +32,11 @@ public class CopyNumberGeneCentric {
         this.geneSymbol = geneSymbol;
     }
 
-    public Integer getChromosome() {
+    public String getChromosome() {
         return chromosome;
     }
 
-    public void setChromosome(Integer chromosome) {
+    public void setChromosome(String chromosome) {
         this.chromosome = chromosome;
     }
 
@@ -55,30 +56,34 @@ public class CopyNumberGeneCentric {
         this.chromosomeEndPosition = chromosomeEndPosition;
     }
 
-    public Float getLOUNH91_LUNG() {
-        return LOUNH91_LUNG;
+    public String getSampleId() {
+        return sampleId;
     }
 
-    public void setLOUNH91_LUNG(Float LOUNH91_LUNG) {
-        this.LOUNH91_LUNG = LOUNH91_LUNG;
+    public void setSampleId(String sampleId) {
+        this.sampleId = sampleId;
     }
 
-    public Float getT98G_CENTRAL_NERVOUS_SYSTEM() {
-        return T98G_CENTRAL_NERVOUS_SYSTEM;
+    public String getExperimentId() {
+        return experimentId;
     }
 
-    public void setT98G_CENTRAL_NERVOUS_SYSTEM(Float t98G_CENTRAL_NERVOUS_SYSTEM) {
-        T98G_CENTRAL_NERVOUS_SYSTEM = t98G_CENTRAL_NERVOUS_SYSTEM;
+    public void setExperimentId(String experimentId) {
+        this.experimentId = experimentId;
     }
 
-    public Float getIPC298_SKIN() {
-        return IPC298_SKIN;
+    public Double getCopyNumberValue() {
+        return copyNumberValue;
     }
 
-    public void setIPC298_SKIN(Float IPC298_SKIN) {
-        this.IPC298_SKIN = IPC298_SKIN;
+    public void setCopyNumberValue(Double copyNumberValue) {
+        this.copyNumberValue = copyNumberValue;
     }
 
-
+    @Override
+    public String toString(){
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        return gson.toJson(this);
+    }
 
 }

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Subject",
+  "description": "The patient or source cell line from which biological samples are derived",
+  "type": "object",
+  "properties": {
+
+    "subjectId": {
+      "description": "Unique identifier for this subject.",
+      "type": "string"
+    },
+
+    "cellLineSourceName": {
+      "description": "Name of source cell line, if the subject is of this nature.",
+      "type": "string"
+    },
+
+    "gender": {
+      "description": "Gender of a patient or donor of a cell line.",
+      "type": "string"
+    },
+
+    "cellLinePrimarySite": {
+      "description": "Primary site where this cell line is derived.",
+      "type": "string"
+    },
+
+    "cellLineAliases": {
+      "description": "Aliases for this cell line.",
+      "type": "array",
+      "items": {
+        "description": "An alias for this cell line."
+        "type": "string"
+      }
+    },
+
+    "cellLineHistology": {
+      "description": "Histology of this cell line.",
+      "type": "string"
+    },
+
+    "attributes": {
+      "description": "An associative array of attribute names and values for the source cell line.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "description": "The name of the attribute category"
+          },
+          "value": {
+            "type": "string",
+            "description": "The value of the attribute."
+          }
+        }
+      }
+    }
+  }
+}

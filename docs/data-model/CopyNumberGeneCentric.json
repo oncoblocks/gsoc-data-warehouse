@@ -5,23 +5,23 @@
 	"type": "object",
 	"properties": {
 	  "entrezGeneId": {
-		"description": "Entrez GeneId of gene where this mutation occurs",
+		"description": "Entrez GeneId of gene where this mutation occurs.",
 		"type": "integer"
 	  },
 
 	  "geneSymbol": {
-		"description": "Symbol of gene where this mutation occurs",
+		"description": "Symbol of gene where this mutation occurs.",
 		"type": "string"
 	  },
 
 	  "genomeAssembly": {
-		"description": "Reference genome assembly used for coordinates in this record",
+		"description": "Reference genome assembly used for coordinates in this record.",
 		"type": "string"
 	  },
 
 	  "chromosome": {
-		"description": "Chromosome on which this mutation is",
-		"type": "integer"
+		"description": "Chromosome on which this gene is located.",
+		"type": "String"
 	  },
 
 	  "chromosomeStartPosition": {
@@ -34,19 +34,13 @@
 		"type": "integer"
 	  },
 
-	  "LOUNH91_LUNG": {
-		"description": "Normalized copy number value for cell line LOUNH91_LUNG",
-		"type": "number"
+	  "sampleId":{
+		"description": "Id of the sample from which this data point is derived.",
+		"type": "string"
 	  },
-
-	  "T98G_CENTRAL_NERVOUS_SYSTEM": {
-		"description": "Normalized copy number value for cell line T98G_CENTRAL_NERVOUS_SYSTEM",
-		"type": "number"
-	  },
-
-	  "T98G_CENTRAL_NERVOUS_SYSTEM": {
-		"description": "Normalized copy number value for cell line T98G_CENTRAL_NERVOUS_SYSTEM",
-		"type": "number"
+	  "experimentId":{
+		"description": "Id of the experiment from which this data point is derived.",
+		"type": "string"
 	  }
 	}
 }

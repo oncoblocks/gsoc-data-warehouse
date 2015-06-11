@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Experiment",
+  "description": "The patient or source cell line from which biological samples are derived",
+  "type": "object",
+  "properties": {
+
+    "experimentId": {
+      "description": "Unique identifier of of this experiment.",
+      "type": "string"
+    },
+
+    "sampleId": {
+      "description": "Id of the sample on which this experiment is performed.",
+      "type": "string"
+    },
+
+    "publicFile": {
+      "description": "A description or URL that identifies the data file, if publicly available, this experiment generates.",
+      "type": "string"
+    }
+  }
+}

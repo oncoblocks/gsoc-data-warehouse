@@ -1,11 +1,42 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Gene",
-  "description": "",
+  "description": "Annotation of genes based on ftp://ftp.ncbi.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz",
   "type": "object",
   "properties": {
     "entrezGeneId": {
+      "description": "Entrez GeneId",
       "type": "integer"
+    },
+    "taxId": {
+      "description": "The unique identifier provided by NCBI Taxonomy for this species or strain/isolate.",
+      "type": "integer"
+    },
+    "geneSymbol": {
+      "description": "Primary symbol for this gene.",
+      "type": "string"
+    },
+
+    "synonyms": {
+      "description": "Synonymous symbols for this gene.",
+      "type": "array",
+      "items": {
+        "description": "An alternative symbol for this gene",
+        "type": "string"
+      }
+    },
+
+    "chromosome": {
+      "description": "The chromosome number the gene is located on.",
+      "type": "string"
+    },
+
+    "geneType": {
+      "description": "The type assigned to the gene according to the list of options provided in http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/objects/entrezgene/entrezgene.asn.",
+      "type": "string"
     }
-  }
+
+  },
+  "required": [ "entrezGeneId", "primaryGeneSymbol", "taxId", "chromosome"]
+
 }
