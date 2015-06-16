@@ -19,21 +19,6 @@
 		"type": "string"
 	  },
 
-	  "chromosome": {
-		"description": "Chromosome on which this gene is located.",
-		"type": "String"
-	  },
-
-	  "chromosomeStartPosition": {
-		"description": "Start position on the chromosome of this mutation.",
-		"type": "integer"
-	  },
-
-	  "chromosomeEndPosition": {
-		"description": "End position on the chromosome of this mutation.",
-		"type": "integer"
-	  },
-
 	  "sampleId":{
 		"description": "Id of the sample from which this data point is derived.",
 		"type": "string"

@@ -2,13 +2,11 @@ package org.oncoblocks.magpie.rest.models;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection="cnv_gene_centric")
 public class CopyNumberGeneCentric {
     private Integer entrezGeneId;
-    private String geneSymbol;
-    private String chromosome;
-    private Integer chromosomeStartPosition;
-    private Integer chromosomeEndPosition;
     private String sampleId;
     private String experimentId;
     private Double copyNumberValue;
@@ -22,38 +20,6 @@ public class CopyNumberGeneCentric {
 
     public void setEntrezGeneId(Integer entrezGeneId) {
         this.entrezGeneId = entrezGeneId;
-    }
-
-    public String getGeneSymbol() {
-        return geneSymbol;
-    }
-
-    public void setGeneSymbol(String geneSymbol) {
-        this.geneSymbol = geneSymbol;
-    }
-
-    public String getChromosome() {
-        return chromosome;
-    }
-
-    public void setChromosome(String chromosome) {
-        this.chromosome = chromosome;
-    }
-
-    public Integer getChromosomeStartPosition() {
-        return chromosomeStartPosition;
-    }
-
-    public void setChromosomeStartPosition(Integer chromosomeStartPosition) {
-        this.chromosomeStartPosition = chromosomeStartPosition;
-    }
-
-    public Integer getChromosomeEndPosition() {
-        return chromosomeEndPosition;
-    }
-
-    public void setChromosomeEndPosition(Integer chromosomeEndPosition) {
-        this.chromosomeEndPosition = chromosomeEndPosition;
     }
 
     public String getSampleId() {

@@ -23,7 +23,7 @@ public class CopyNumberGeneCentricController {
     private CopyNumberGeneCentricService copyNumberGeneCentricService;
 
     @RequestMapping(value="/all", method = RequestMethod.GET)
-    public List<CopyNumberGeneCentric> findAll(){
+    public Iterable<CopyNumberGeneCentric> findAll(){
 
         try{
             return copyNumberGeneCentricService.findAll();
@@ -42,6 +42,5 @@ public class CopyNumberGeneCentricController {
             return new ArrayList<CopyNumberGeneCentric>();
         }
     }
-
 }
 

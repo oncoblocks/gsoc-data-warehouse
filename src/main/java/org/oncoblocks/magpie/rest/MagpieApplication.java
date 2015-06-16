@@ -2,19 +2,18 @@ package org.oncoblocks.magpie.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 
-/**
- * Created by tewei on 6/2/15.
- */
 @Configuration
 @EnableAutoConfiguration//(exclude = { JacksonAutoConfiguration.class })
-@ComponentScan
+@ComponentScan(basePackages = "org.oncoblocks.magpie.rest")
 public class MagpieApplication {
-    public static void main(String[] args){
-
-        SpringApplication.run(MagpieApplication.class, args);
+    public static void main(String[] args) throws Exception{
+        ApplicationContext applicationContext = SpringApplication.run(MagpieApplication.class, args);
+//        DataLoader dataLoader = new DataLoader();
+//        dataLoader.loadCnvData();
     }
 }
