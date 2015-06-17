@@ -10,7 +10,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.GsonHttpMessageConverter;
 
 @Configuration
-public class CustomConfiguration {
+public class RestConfiguration {
 
     @Bean
     public HttpMessageConverters customConverters() {
