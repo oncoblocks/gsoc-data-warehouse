@@ -1,4 +1,4 @@
-package org.oncoblocks.magpie.rest.scripts;
+package org.oncoblocks.magpie.clt.scripts;
 
 import com.mongodb.MongoClient;
 import org.apache.commons.logging.Log;
