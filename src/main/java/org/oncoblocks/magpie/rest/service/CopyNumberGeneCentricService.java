@@ -7,9 +7,10 @@ import org.apache.commons.logging.LogFactory;
 import org.oncoblocks.magpie.rest.repositories.CopyNumberGeneCentricRepository;
 import org.oncoblocks.magpie.rest.repositories.CopyNumberGeneCentricRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
-import org.springframework.stereotype.Service;
+
 
 @Service
 public class CopyNumberGeneCentricService {
@@ -30,8 +31,7 @@ public class CopyNumberGeneCentricService {
     }
 
     public CopyNumberGeneCentric save(CopyNumberGeneCentric copyNumberGeneCentric){
-        //log.debug("Trying to save " + copyNumberGeneCentric);
-        System.out.println("Trying to save " + copyNumberGeneCentric);
+        log.debug("Trying to save " + copyNumberGeneCentric);
         copyNumberGeneCentricRepository.save(copyNumberGeneCentric);
         return copyNumberGeneCentric;
     }

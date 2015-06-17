@@ -13,7 +13,5 @@ import org.springframework.context.annotation.Configuration;
 public class MagpieApplication {
     public static void main(String[] args) throws Exception{
         ApplicationContext applicationContext = SpringApplication.run(MagpieApplication.class, args);
-//        DataLoader dataLoader = new DataLoader();
-//        dataLoader.loadCnvData();
     }
 }

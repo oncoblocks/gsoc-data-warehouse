@@ -1,1 +1,1 @@
-mvn -e -q exec:java -Dexec.mainClass="org.oncoblocks.magpie.rest.scripts.DataLoader"
+mvn -e -q exec:java -Dexec.mainClass="org.oncoblocks.magpie.clt.util.ImportData"
