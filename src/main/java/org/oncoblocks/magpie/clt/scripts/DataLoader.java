@@ -3,22 +3,19 @@ package org.oncoblocks.magpie.clt.scripts;
 import com.mongodb.MongoClient;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
 import org.oncoblocks.magpie.rest.service.CopyNumberGeneCentricService;
-import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
-
-import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DataLoader {
 
-    @Bean
-    private CopyNumberGeneCentricService getCopyNumberGeneCentricService(){
-        return new CopyNumberGeneCentricService();
-    }
-
+		@Autowired
+		CopyNumberGeneCentricService copyNumberGeneCentricService;
+	
     private static final Log log = LogFactory.getLog(DataLoader.class);
 
     public void loadCnvData() throws Exception{
@@ -63,7 +60,7 @@ public class DataLoader {
 
         //mongoTemplate.insert(cnv, "cnv_gene_centric");
 
-        this.getCopyNumberGeneCentricService().save(cnv);
+				copyNumberGeneCentricService.save(cnv);
 
         log.info("Insert: " + cnv);
     }

@@ -1,4 +1,4 @@
-package org.oncoblocks.magpie.clt.config;
+package org.oncoblocks.magpie.test;
 
 import com.mongodb.MongoClient;
 import com.mongodb.ServerAddress;
@@ -10,12 +10,12 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 import java.util.Collections;
 
 @Configuration
-@EnableMongoRepositories(basePackages = {"org.oncoblocks.magpie.rest.repositories"})
+@EnableMongoRepositories("org.oncoblocks.magpie.rest.repositories")
+public class MongoTestConfiguration extends AbstractMongoConfiguration {
 
-public class CltConfiguration extends AbstractMongoConfiguration {
     @Override
     public String getDatabaseName(){
-        return "magpie_test_1";
+        return "magpie_test_1_test";
     }
 
     @Override

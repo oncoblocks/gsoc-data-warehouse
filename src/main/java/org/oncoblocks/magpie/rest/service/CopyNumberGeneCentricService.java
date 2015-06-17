@@ -1,15 +1,14 @@
 package org.oncoblocks.magpie.rest.service;
 
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
 import org.oncoblocks.magpie.rest.repositories.CopyNumberGeneCentricRepository;
 import org.oncoblocks.magpie.rest.repositories.CopyNumberGeneCentricRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
+import java.util.List;
 
 
 @Service
@@ -32,7 +31,7 @@ public class CopyNumberGeneCentricService {
 
     public CopyNumberGeneCentric save(CopyNumberGeneCentric copyNumberGeneCentric){
         log.debug("Trying to save " + copyNumberGeneCentric);
-        copyNumberGeneCentricRepository.save(copyNumberGeneCentric);
+        copyNumberGeneCentricRepository.insert(copyNumberGeneCentric);
         return copyNumberGeneCentric;
     }
 
