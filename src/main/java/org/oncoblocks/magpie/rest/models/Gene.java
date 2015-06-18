@@ -2,18 +2,26 @@ package org.oncoblocks.magpie.rest.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import org.springframework.data.annotation.Id;
+import java.util.HashSet;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection="gene")
 
 public class Gene {
+
 
     @Id
     private Integer entrezGeneId;
 
     private Integer taxId;
     private String geneSymbol;
-    private ArrayList<String> synonyms;
+    private HashSet<String> synonyms;
     private String chromosome;
+    private String description;
     private String geneType;
     private ArrayList< HashMap<String, String> > attributes;
 
@@ -41,11 +49,11 @@ public class Gene {
         this.geneSymbol = geneSymbol;
     }
 
-    public ArrayList<String> getSynonyms() {
+    public HashSet<String> getSynonyms() {
         return synonyms;
     }
 
-    public void setSynonyms(ArrayList<String> synonyms) {
+    public void setSynonyms(HashSet<String> synonyms) {
         this.synonyms = synonyms;
     }
 
@@ -55,6 +63,14 @@ public class Gene {
 
     public void setChromosome(String chromosome) {
         this.chromosome = chromosome;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getGeneType() {
@@ -73,4 +89,10 @@ public class Gene {
         this.attributes = attributes;
     }
 
+
+    @Override
+    public String toString(){
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        return gson.toJson(this);
+    }
 }

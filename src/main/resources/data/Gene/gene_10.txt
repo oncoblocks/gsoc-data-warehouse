@@ -1,0 +1,11 @@
+#GeneID	tax_id	Symbol	Synonyms	chromosome	type_of_gene	description
+1	9606	A1BG	A1B|ABG|GAB|HYST2477	19	glycoprotein	alpha-1-B
+2	9606	A2M	A2MD|CPAMD5|FWP007|S863-7	12	protein-coding	alpha-2-macroglobulin
+3	9606	A2MP1	A2MP	12	pseudogene	alpha-2-macroglobulin
+9	9606	NAT1	AAC1|MNAT|NAT-1|NATI	8	1	N-acetyltransferase
+10	9606	NAT2	AAC2|NAT-2|PNAT	8	2	N-acetyltransferase
+11	9606	NATP	AACP|NATP1	8	pseudogene	N-acetyltransferase
+12	9606	SERPINA3	AACT|ACT|GIG24|GIG25	14	peptidase	serpin
+13	9606	AADAC	CES5A1|DAC	3	deacetylase	arylacetamide
+14	9606	AAMP	-	2	migratory	angio-associated,
+15	9606	AANAT	DSPS|SNAT	17	N-acetyltransferase	aralkylamine

@@ -2,8 +2,13 @@ package org.oncoblocks.magpie.rest.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import org.springframework.data.annotation.Id;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "subject")
 public class Subject {
 
     // Common attributes
@@ -78,4 +83,9 @@ public class Subject {
         CellLineHistology = cellLineHistology;
     }
 
+    @Override
+    public String toString(){
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        return gson.toJson(this);
+    }
 }

@@ -4,14 +4,17 @@
   "description": "Annotation of genes based on ftp://ftp.ncbi.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz",
   "type": "object",
   "properties": {
+
     "entrezGeneId": {
-      "description": "Entrez GeneId",
+      "description": "Entrez GeneId of this gene.",
       "type": "integer"
     },
+
     "taxId": {
       "description": "The unique identifier provided by NCBI Taxonomy for this species or strain/isolate.",
       "type": "integer"
     },
+
     "geneSymbol": {
       "description": "Primary symbol for this gene.",
       "type": "string"
@@ -23,7 +26,9 @@
       "items": {
         "description": "An alternative symbol for this gene",
         "type": "string"
-      }
+      },
+      "minItems": 1,
+      "uniqueItems": true
     },
 
     "chromosome": {
@@ -33,6 +38,11 @@
 
     "geneType": {
       "description": "The type assigned to the gene according to the list of options provided in http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/objects/entrezgene/entrezgene.asn.",
+      "type": "string"
+    },
+
+    "description": {
+      "description": "A descriptive name for the gene.",
       "type": "string"
     }
 

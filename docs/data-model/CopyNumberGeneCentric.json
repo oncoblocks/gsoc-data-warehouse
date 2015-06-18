@@ -4,19 +4,10 @@
 	"description": "",
 	"type": "object",
 	"properties": {
+
 	  "entrezGeneId": {
 		"description": "Entrez GeneId of gene where this mutation occurs.",
 		"type": "integer"
-	  },
-
-	  "geneSymbol": {
-		"description": "Symbol of gene where this mutation occurs.",
-		"type": "string"
-	  },
-
-	  "genomeAssembly": {
-		"description": "Reference genome assembly used for coordinates in this record.",
-		"type": "string"
 	  },
 
 	  "sampleId":{

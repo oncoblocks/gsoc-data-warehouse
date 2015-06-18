@@ -13,11 +13,6 @@
     "sampleId": {
       "description": "Id of the sample on which this experiment is performed.",
       "type": "string"
-    },
-
-    "publicFile": {
-      "description": "A description or URL that identifies the data file, if publicly available, this experiment generates.",
-      "type": "string"
     }
   }
 }
