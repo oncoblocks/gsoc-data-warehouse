@@ -6,7 +6,6 @@ import org.oncoblocks.magpie.clt.config.ApplicationConfig;
 import org.oncoblocks.magpie.clt.config.CltConfiguration;
 import org.oncoblocks.magpie.rest.models.Gene;
 import org.oncoblocks.magpie.rest.repositories.GeneRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.io.BufferedReader;

@@ -19,11 +19,11 @@ Build the application as follows.
 
     mvn clean package
     
-Then import test data into MongoDB by executing scripts. For example, the following
+Then import all test data into MongoDB by executing scripts, execute the following script
+
+    sh scripts/import_data.sh
     
-    sh scripts/import_gene_data.sh ./src/main/resources/data/gene/gene_10.txt
-    
-loads 10 gene records.
+while in the root directory of the project (where pom.xml resides).
     
 Running the JAR package will automatically start tomcat at `http://localhost:8080`.
 

@@ -4,13 +4,14 @@
   "description": "Cancer studies that recruit subjects, produce samples, and perform experiments generating genomic data. ",
   "type": "object",
   "properties": {
+
     "studyId": {
       "description": "Unique identifier for studies.",
       "type": "string"
     },
 
-    "cellLineOrigin": {
-      "description": "Origin of cell line, if the this sample is derived from a cell line subject.",
+    "description": {
+      "description": "Brief description of this cancer study",
       "type": "string"
     },
 
