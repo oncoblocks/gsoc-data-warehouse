@@ -1,0 +1,1048 @@
+#Derived from "CCLE_sample_info_file_2012-10-18.txt"
+#subjectId	cellLineSourceName	gender	cellLinePrimarySite	cellLineHistology
+1321N1_CENTRAL_NERVOUS_SYSTEM	1321N1	M	central_nervous_system	glioma
+143B_BONE	143B	F	bone	osteosarcoma
+22RV1_PROSTATE	22Rv1	M	prostate	carcinoma
+2313287_STOMACH	23132/87	M	stomach	carcinoma
+253JBV_URINARY_TRACT	253J-BV	U	urinary_tract	carcinoma
+253J_URINARY_TRACT	253J		urinary_tract	carcinoma
+42MGBA_CENTRAL_NERVOUS_SYSTEM	42-MG-BA	M	central_nervous_system	glioma
+5637_URINARY_TRACT	5637	M	urinary_tract	carcinoma
+59M_OVARY	59M	F	ovary	carcinoma
+639V_URINARY_TRACT	639-V	M	urinary_tract	carcinoma
+647V_URINARY_TRACT	647-V	M	urinary_tract	carcinoma
+697_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	697	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+769P_KIDNEY	769-P	F	kidney	carcinoma
+786O_KIDNEY	786-O	M	kidney	carcinoma
+8305C_THYROID	8305C	F	thyroid	carcinoma
+8505C_THYROID	8505C	F	thyroid	carcinoma
+8MGBA_CENTRAL_NERVOUS_SYSTEM	8-MG-BA	F	central_nervous_system	glioma
+A101D_SKIN	A101D	M	skin	malignant_melanoma
+A1207_CENTRAL_NERVOUS_SYSTEM	A1207		central_nervous_system	glioma
+A172_CENTRAL_NERVOUS_SYSTEM	A172	M	central_nervous_system	glioma
+A204_SOFT_TISSUE	A-204	F	soft_tissue	rhabdoid_tumour
+A2058_SKIN	A2058	M	skin	malignant_melanoma
+A253_SALIVARY_GLAND	A-253	M	salivary_gland	carcinoma
+A2780_OVARY	A2780	F	ovary	carcinoma
+A375_SKIN	A-375	F	skin	malignant_melanoma
+A3KAW_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	A3/KAW	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+A498_KIDNEY	A-498	F	kidney	carcinoma
+A4FUK_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	A4/Fuk	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+A549_LUNG	A549	M	lung	carcinoma
+A673_BONE	A-673	F	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+A704_KIDNEY	A-704	M	kidney	carcinoma
+ABC1_LUNG	ABC-1	M	lung	carcinoma
+ACCMESO1_PLEURA	ACC-MESO-1		pleura	mesothelioma
+ACCS_URINARY_TRACT	ACCS		urinary_tract	carcinoma
+ACHN_KIDNEY	ACHN	M	kidney	carcinoma
+AGS_STOMACH	AGS	F	stomach	carcinoma
+ALEXANDERCELLS_LIVER	Alexander cells	M	liver	carcinoma
+ALLSIL_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	ALL-SIL	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+AM38_CENTRAL_NERVOUS_SYSTEM	AM-38	M	central_nervous_system	glioma
+AML193_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	AML-193	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+AMO1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	AMO-1	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+AN3CA_ENDOMETRIUM	AN3 CA	F	endometrium	carcinoma
+ASPC1_PANCREAS	AsPC-1	F	pancreas	carcinoma
+AU565_BREAST	AU565	F	breast	carcinoma
+AZ521_STOMACH	AZ-521		stomach	carcinoma
+BC3C_URINARY_TRACT	BC-3C	F	urinary_tract	carcinoma
+BCP1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	BCP-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+BCPAP_THYROID	B-CPAP	F	thyroid	carcinoma
+BDCM_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	BDCM	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+BECKER_CENTRAL_NERVOUS_SYSTEM	Becker	M	central_nervous_system	glioma
+BEN_LUNG	BEN	M	lung	carcinoma
+BFTC905_URINARY_TRACT	BFTC-905	F	urinary_tract	carcinoma
+BFTC909_KIDNEY	BFTC-909	M	kidney	carcinoma
+BHT101_THYROID	BHT-101	F	thyroid	carcinoma
+BHY_UPPER_AERODIGESTIVE_TRACT	BHY	M	upper_aerodigestive_tract	carcinoma
+BICR16_UPPER_AERODIGESTIVE_TRACT	BICR 16	M	upper_aerodigestive_tract	carcinoma
+BICR18_UPPER_AERODIGESTIVE_TRACT	BICR 18	M	upper_aerodigestive_tract	carcinoma
+BICR22_UPPER_AERODIGESTIVE_TRACT	BICR 22	M	upper_aerodigestive_tract	carcinoma
+BICR31_UPPER_AERODIGESTIVE_TRACT	BICR 31	M	upper_aerodigestive_tract	carcinoma
+BICR56_UPPER_AERODIGESTIVE_TRACT	BICR 56	F	upper_aerodigestive_tract	carcinoma
+BICR6_UPPER_AERODIGESTIVE_TRACT	BICR 6	M	upper_aerodigestive_tract	carcinoma
+BJHTERT_SKIN	BJ hTERT		skin	other
+BL41_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	BL-41	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+BL70_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	BL-70	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+BT20_BREAST	BT-20	F	breast	carcinoma
+BT474_BREAST	BT-474	F	breast	carcinoma
+BT483_BREAST	BT-483	F	breast	carcinoma
+BT549_BREAST	BT-549	F	breast	carcinoma
+BV173_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	BV-173	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+BXPC3_PANCREAS	BxPC-3	F	pancreas	carcinoma
+C2BBE1_LARGE_INTESTINE	C2BBe1	M	large_intestine	carcinoma
+C32_SKIN	C32	M	skin	malignant_melanoma
+C3A_LIVER	C3A	M	liver	carcinoma
+CA46_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	CA46	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+CADOES1_BONE	CADO-ES1	F	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+CAKI1_KIDNEY	Caki-1	M	kidney	carcinoma
+CAKI2_KIDNEY	Caki-2	M	kidney	carcinoma
+CAL120_BREAST	CAL-120	F	breast	carcinoma
+CAL12T_LUNG	CAL-12T	M	lung	carcinoma
+CAL148_BREAST	CAL-148	F	breast	carcinoma
+CAL27_UPPER_AERODIGESTIVE_TRACT	CAL 27	M	upper_aerodigestive_tract	carcinoma
+CAL29_URINARY_TRACT	CAL-29	F	urinary_tract	carcinoma
+CAL33_UPPER_AERODIGESTIVE_TRACT	CAL-33	M	upper_aerodigestive_tract	carcinoma
+CAL51_BREAST	CAL-51	F	breast	carcinoma
+CAL54_KIDNEY	CAL-54	M	kidney	carcinoma
+CAL62_THYROID	CAL-62	F	thyroid	carcinoma
+CAL78_BONE	CAL-78	M	bone	chondrosarcoma
+CAL851_BREAST	CAL-85-1	F	breast	carcinoma
+CALU1_LUNG	Calu-1	M	lung	carcinoma
+CALU3_LUNG	Calu-3	M	lung	carcinoma
+CALU6_LUNG	Calu-6	F	lung	carcinoma
+CAMA1_BREAST	CAMA-1	F	breast	carcinoma
+CAOV3_OVARY	Caov-3	F	ovary	carcinoma
+CAOV4_OVARY	Caov-4	F	ovary	carcinoma
+CAPAN1_PANCREAS	Capan-1	M	pancreas	carcinoma
+CAPAN2_PANCREAS	Capan-2	M	pancreas	carcinoma
+CAS1_CENTRAL_NERVOUS_SYSTEM	CAS-1	M	central_nervous_system	glioma
+CCFSTTG1_CENTRAL_NERVOUS_SYSTEM	CCF-STTG1	F	central_nervous_system	glioma
+CCK81_LARGE_INTESTINE	CCK-81		large_intestine	carcinoma
+CFPAC1_PANCREAS	CFPAC-1	M	pancreas	carcinoma
+CGTHW1_THYROID	CGTH-W-1	F	thyroid	carcinoma
+CH157MN_CENTRAL_NERVOUS_SYSTEM	CH-157MN		central_nervous_system	meningioma
+CHAGOK1_LUNG	ChaGo-K-1	M	lung	carcinoma
+CHL1_SKIN	CHL-1		skin	malignant_melanoma
+CHP126_AUTONOMIC_GANGLIA	CHP-126	F	autonomic_ganglia	neuroblastoma
+CHP212_AUTONOMIC_GANGLIA	CHP-212		autonomic_ganglia	neuroblastoma
+CI1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	CI-1	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+CJM_SKIN	CJM		skin	malignant_melanoma
+CL11_LARGE_INTESTINE	CL-11		large_intestine	carcinoma
+CL14_LARGE_INTESTINE	CL-14	M	large_intestine	carcinoma
+CL34_LARGE_INTESTINE	CL-34	F	large_intestine	carcinoma
+CL40_LARGE_INTESTINE	CL-40	F	large_intestine	carcinoma
+CMK115_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	CMK-11-5		haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+CMK86_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	CMK-86		haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+CMK_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	CMK		haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+CMLT1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	CML-T1	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+COLO201_LARGE_INTESTINE	COLO 201	M	large_intestine	carcinoma
+COLO205_LARGE_INTESTINE	COLO 205	M	large_intestine	carcinoma
+COLO320_LARGE_INTESTINE	COLO-320	F	large_intestine	carcinoma
+COLO668_LUNG	COLO 668	F	lung	carcinoma
+COLO677_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	COLO-677	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+COLO678_LARGE_INTESTINE	COLO-678	M	large_intestine	carcinoma
+COLO679_SKIN	COLO-679	F	skin	malignant_melanoma
+COLO680N_OESOPHAGUS	COLO-680N	F	oesophagus	carcinoma
+COLO684_ENDOMETRIUM	COLO 684	F	endometrium	carcinoma
+COLO704_OVARY	COLO-704	F	ovary	carcinoma
+COLO741_SKIN	COLO 741	F	skin	malignant_melanoma
+COLO775_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	COLO 775	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+COLO783_SKIN	COLO-783	F	skin	malignant_melanoma
+COLO792_SKIN	COLO 792	M	skin	malignant_melanoma
+COLO800_SKIN	COLO-800		skin	malignant_melanoma
+COLO818_SKIN	COLO-818		skin	malignant_melanoma
+COLO829_SKIN	COLO 829	M	skin	malignant_melanoma
+COLO849_SKIN	COLO-849	M	skin	malignant_melanoma
+CORL105_LUNG	COR-L105	M	lung	carcinoma
+CORL23_LUNG	COR-L23	M	lung	carcinoma
+CORL24_LUNG	COR-L24	M	lung	carcinoma
+CORL279_LUNG	COR-L279	M	lung	carcinoma
+CORL311_LUNG	COR-L311	M	lung	carcinoma
+CORL47_LUNG	COR-L47	M	lung	carcinoma
+CORL51_LUNG	COR-L51	M	lung	carcinoma
+CORL88_LUNG	COR-L88	M	lung	carcinoma
+CORL95_LUNG	COR-L95	M	lung	carcinoma
+COV318_OVARY	COV318	F	ovary	carcinoma
+COV362_OVARY	COV362	F	ovary	carcinoma
+COV434_OVARY	COV434	F	ovary	sex_cord-stromal_tumour
+COV504_OVARY	COV504	F	ovary	carcinoma
+COV644_OVARY	COV644	F	ovary	carcinoma
+CPCN_LUNG	CPC-N		lung	carcinoma
+CW2_LARGE_INTESTINE	CW-2		large_intestine	carcinoma
+D283MED_CENTRAL_NERVOUS_SYSTEM	D283 Med	M	central_nervous_system	primitive_neuroectodermal_tumour-medulloblastoma
+D341MED_CENTRAL_NERVOUS_SYSTEM	D341 Med	M	central_nervous_system	primitive_neuroectodermal_tumour-medulloblastoma
+DANG_PANCREAS	DAN-G		pancreas	carcinoma
+DAOY_CENTRAL_NERVOUS_SYSTEM	Daoy	M	central_nervous_system	primitive_neuroectodermal_tumour-medulloblastoma
+DAUDI_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Daudi	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+DB_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	DB	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+DBTRG05MG_CENTRAL_NERVOUS_SYSTEM	DBTRG-05MG	F	central_nervous_system	glioma
+DEL_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	DEL	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+DETROIT562_UPPER_AERODIGESTIVE_TRACT	Detroit 562	F	upper_aerodigestive_tract	carcinoma
+DFCI024_LUNG	DFCI024		lung	carcinoma
+DKMG_CENTRAL_NERVOUS_SYSTEM	DK-MG	F	central_nervous_system	glioma
+DLD1_LARGE_INTESTINE	DLD-1	M	large_intestine	carcinoma
+DM3_PLEURA	DM-3	M	pleura	mesothelioma
+DMS114_LUNG	DMS 114	M	lung	carcinoma
+DMS153_LUNG	DMS 153	M	lung	carcinoma
+DMS273_LUNG	DMS 273	F	lung	carcinoma
+DMS454_LUNG	DMS 454	M	lung	carcinoma
+DMS53_LUNG	DMS 53	M	lung	carcinoma
+DMS79_LUNG	DMS 79		lung	carcinoma
+DND41_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	DND-41	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+DOHH2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	DOHH-2	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+DU145_PROSTATE	DU 145	M	prostate	carcinoma
+DU4475_BREAST	DU4475	F	breast	carcinoma
+DV90_LUNG	DV-90	M	lung	carcinoma
+EB1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	EB1	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+EB2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	EB2	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+EBC1_LUNG	EBC-1	M	lung	carcinoma
+ECC10_STOMACH	ECC10		stomach	carcinoma
+ECC12_STOMACH	ECC12		stomach	carcinoma
+ECGI10_OESOPHAGUS	EC-GI-10		oesophagus	carcinoma
+EFE184_ENDOMETRIUM	EFE-184	F	endometrium	carcinoma
+EFM192A_BREAST	EFM-192A	F	breast	carcinoma
+EFM19_BREAST	EFM-19	F	breast	carcinoma
+EFO21_OVARY	EFO-21	F	ovary	carcinoma
+EFO27_OVARY	EFO-27	F	ovary	carcinoma
+EHEB_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	EHEB	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+EJM_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	EJM	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+EM2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	EM-2	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+EN_ENDOMETRIUM	EN	F	endometrium	carcinoma
+EOL1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	EOL-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+EPLC272H_LUNG	EPLC-272H	M	lung	carcinoma
+ES2_OVARY	ES-2	F	ovary	carcinoma
+ESS1_ENDOMETRIUM	ESS-1	F	endometrium	carcinoma
+EVSAT_BREAST	EVSA-T	F	breast	carcinoma
+EW8_BONE	EW8		bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+EWS502_BONE	EWS502		bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+F36P_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	F-36P	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+F5_CENTRAL_NERVOUS_SYSTEM	F5		central_nervous_system	meningioma
+FADU_UPPER_AERODIGESTIVE_TRACT	FaDu	M	upper_aerodigestive_tract	carcinoma
+FTC133_THYROID	FTC-133	M	thyroid	carcinoma
+FTC238_THYROID	FTC-238	M	thyroid	carcinoma
+FU97_STOMACH	FU97	F	stomach	carcinoma
+FUOV1_OVARY	FU-OV-1	F	ovary	carcinoma
+G292CLONEA141B1_BONE	G-292, clone A141B1	F	bone	osteosarcoma
+G361_SKIN	G-361	M	skin	malignant_melanoma
+G401_SOFT_TISSUE	G-401	M	soft_tissue	rhabdoid_tumour
+G402_SOFT_TISSUE	G-402	F	soft_tissue	rhabdoid_tumour
+GA10_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	GA-10	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+GAMG_CENTRAL_NERVOUS_SYSTEM	GAMG	F	central_nervous_system	glioma
+GB1_CENTRAL_NERVOUS_SYSTEM	GB-1	M	central_nervous_system	glioma
+GCIY_STOMACH	GCIY	F	stomach	carcinoma
+GCT_SOFT_TISSUE	GCT	M	soft_tissue	malignant_fibrous_histiocytoma-pleomorphic_sarcoma
+GDM1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	GDM-1	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+GI1_CENTRAL_NERVOUS_SYSTEM	GI-1	M	central_nervous_system	glioma
+GMS10_CENTRAL_NERVOUS_SYSTEM	GMS-10	M	central_nervous_system	glioma
+GOS3_CENTRAL_NERVOUS_SYSTEM	GOS-3	M	central_nervous_system	glioma
+GP2D_LARGE_INTESTINE	GP2d	F	large_intestine	carcinoma
+GRANTA519_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	GRANTA-519	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+GRM_SKIN	GR-M	M	skin	malignant_melanoma
+GSS_STOMACH	GSS		stomach	carcinoma
+GSU_STOMACH	GSU		stomach	carcinoma
+H4_CENTRAL_NERVOUS_SYSTEM	H4	M	central_nervous_system	glioma
+HARA_LUNG	HARA	M	lung	carcinoma
+HCC1143_BREAST	HCC1143	F	breast	carcinoma
+HCC1171_LUNG	HCC-1171	M	lung	carcinoma
+HCC1187_BREAST	HCC1187	F	breast	carcinoma
+HCC1195_LUNG	HCC-1195	M	lung	carcinoma
+HCC1359_LUNG	HCC-1359	F	lung	carcinoma
+HCC1395_BREAST	HCC1395	F	breast	carcinoma
+HCC1419_BREAST	HCC1419	F	breast	carcinoma
+HCC1428_BREAST	HCC1428	F	breast	carcinoma
+HCC1438_LUNG	HCC-1438	M	lung	carcinoma
+HCC1500_BREAST	HCC1500	F	breast	carcinoma
+HCC1569_BREAST	HCC1569	F	breast	carcinoma
+HCC1588_LUNG	HCC-1588	F	lung	carcinoma
+HCC1599_BREAST	HCC1599	F	breast	carcinoma
+HCC15_LUNG	HCC-15	M	lung	carcinoma
+HCC1806_BREAST	HCC1806	F	breast	carcinoma
+HCC1833_LUNG	HCC-1833		lung	carcinoma
+HCC1897_LUNG	HCC-1897		lung	carcinoma
+HCC1937_BREAST	HCC1937	F	breast	carcinoma
+HCC1954_BREAST	HCC1954	F	breast	carcinoma
+HCC202_BREAST	HCC202	F	breast	carcinoma
+HCC2108_LUNG	HCC-2108	M	lung	carcinoma
+HCC2157_BREAST	HCC2157	F	breast	carcinoma
+HCC2218_BREAST	HCC2218	F	breast	carcinoma
+HCC2279_LUNG	HCC-2279	F	lung	carcinoma
+HCC2814_LUNG	HCC-2814		lung	carcinoma
+HCC2935_LUNG	HCC2935	M	lung	carcinoma
+HCC33_LUNG	HCC-33	M	lung	carcinoma
+HCC364_LUNG	HCC364		lung	carcinoma
+HCC366_LUNG	HCC-366	F	lung	carcinoma
+HCC38_BREAST	HCC38	F	breast	carcinoma
+HCC4006_LUNG	HCC4006	M	lung	carcinoma
+HCC44_LUNG	HCC-44	F	lung	carcinoma
+HCC56_LARGE_INTESTINE	HCC-56		large_intestine	carcinoma
+HCC70_BREAST	HCC70	F	breast	carcinoma
+HCC78_LUNG	HCC-78	M	lung	carcinoma
+HCC827GR5_LUNG	HCC-827-GR5		lung	carcinoma
+HCC827_LUNG	HCC827	F	lung	carcinoma
+HCC95_LUNG	HCC-95	M	lung	carcinoma
+HCT116_LARGE_INTESTINE	HCT 116	M	large_intestine	carcinoma
+HCT15_LARGE_INTESTINE	HCT-15	M	large_intestine	carcinoma
+HCT8_LARGE_INTESTINE	HCT-8	M	large_intestine	carcinoma
+HDLM2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HDLM-2	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HDMYZ_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HD-MY-Z		haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HDQP1_BREAST	HDQ-P1	F	breast	carcinoma
+HEC108_ENDOMETRIUM	HEC-108	F	endometrium	carcinoma
+HEC151_ENDOMETRIUM	HEC-151	F	endometrium	carcinoma
+HEC1A_ENDOMETRIUM	HEC-1-A	F	endometrium	carcinoma
+HEC1B_ENDOMETRIUM	HEC-1-B	F	endometrium	carcinoma
+HEC251_ENDOMETRIUM	HEC-251	F	endometrium	carcinoma
+HEC265_ENDOMETRIUM	HEC-265	F	endometrium	carcinoma
+HEC50B_ENDOMETRIUM	HEC-50B	F	endometrium	carcinoma
+HEC59_ENDOMETRIUM	HEC-59	F	endometrium	carcinoma
+HEC6_ENDOMETRIUM	HEC-6	F	endometrium	carcinoma
+HEKTE_KIDNEY	HEK TE		kidney	other
+HEL9217_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HEL 92.1.7	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+HEL_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HEL	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+HEP3B217_LIVER	Hep 3B2.1-7	M	liver	carcinoma
+HEPG2_LIVER	Hep G2	M	liver	carcinoma
+HEYA8_OVARY	Hey-A8	F	ovary	carcinoma
+HGC27_STOMACH	HGC-27		stomach	carcinoma
+HH_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HH	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HK2_KIDNEY	HK-2		kidney	other
+HL60_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HL-60	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+HLC1_LUNG	HLC-1		lung	carcinoma
+HLE_LIVER	HLE	M	liver	carcinoma
+HLFA_LUNG	HLF-a	F	lung	carcinoma
+HLF_LIVER	HLF	M	liver	carcinoma
+HMC18_BREAST	HMC-1-8	F	breast	carcinoma
+HMCB_SKIN	HMCB		skin	malignant_melanoma
+HMEL_BREAST	HMEL		breast	other
+HN_UPPER_AERODIGESTIVE_TRACT	HN	M	upper_aerodigestive_tract	carcinoma
+HOS_BONE	HOS	F	bone	osteosarcoma
+HPAC_PANCREAS	HPAC	F	pancreas	carcinoma
+HPAFII_PANCREAS	HPAF-II	M	pancreas	carcinoma
+HPBALL_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HPB-ALL	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HRT18_LARGE_INTESTINE	HRT-18	M	large_intestine	carcinoma
+HS172T_URINARY_TRACT	Hs 172.T	M	urinary_tract	carcinoma
+HS229T_LUNG	Hs 229.T	M	lung	carcinoma
+HS255T_LARGE_INTESTINE	Hs 255.T	F	large_intestine	carcinoma
+HS274T_BREAST	Hs 274.T	F	breast	carcinoma
+HS281T_BREAST	Hs 281.T	F	breast	carcinoma
+HS294T_SKIN	Hs 294T	M	skin	malignant_melanoma
+HS343T_BREAST	Hs 343.T	F	breast	carcinoma
+HS571T_OVARY	Hs 571.T	F	ovary	carcinoma
+HS578T_BREAST	Hs 578T	F	breast	carcinoma
+HS600T_SKIN	Hs 600.T		skin	malignant_melanoma
+HS604T_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Hs 604.T	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HS606T_BREAST	Hs 606.T	F	breast	carcinoma
+HS611T_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Hs 611.T	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HS616T_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Hs 616.T	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HS618T_LUNG	Hs 618.T	F	lung	carcinoma
+HS675T_LARGE_INTESTINE	Hs 675.T	M	large_intestine	carcinoma
+HS683_CENTRAL_NERVOUS_SYSTEM	Hs 683	M	central_nervous_system	glioma
+HS688AT_SKIN	Hs 688(A).T	M	skin	malignant_melanoma
+HS695T_SKIN	Hs 695T	M	skin	malignant_melanoma
+HS698T_LARGE_INTESTINE	Hs 698.T	M	large_intestine	carcinoma
+HS706T_BONE	Hs 706.T	F	bone	giant_cell_tumour
+HS729_SOFT_TISSUE	Hs 729	M	soft_tissue	rhabdomyosarcoma
+HS737T_BONE	Hs 737.T	F	bone	other
+HS739T_BREAST	Hs 739.T	F	breast	carcinoma
+HS742T_BREAST	Hs 742.T	F	breast	carcinoma
+HS746T_STOMACH	Hs 746T	M	stomach	carcinoma
+HS751T_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Hs 751.T		haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HS766T_PANCREAS	Hs 766T	M	pancreas	carcinoma
+HS819T_BONE	Hs 819.T	M	bone	chondrosarcoma
+HS821T_BONE	Hs 821.T	F	bone	giant_cell_tumour
+HS822T_BONE	Hs 822.T	F	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+HS834T_SKIN	Hs 834.T	F	skin	malignant_melanoma
+HS839T_SKIN	Hs 839.T	F	skin	malignant_melanoma
+HS840T_UPPER_AERODIGESTIVE_TRACT	Hs 840.T	M	upper_aerodigestive_tract	other
+HS852T_SKIN	Hs 852.T	M	skin	malignant_melanoma
+HS863T_BONE	Hs 863.T	F	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+HS870T_BONE	Hs 870.T		bone	osteosarcoma
+HS888T_BONE	Hs 888.T	M	bone	osteosarcoma
+HS895T_SKIN	Hs 895.T	F	skin	malignant_melanoma
+HS934T_SKIN	Hs 934.T	F	skin	malignant_melanoma
+HS936T_SKIN	Hs 936.T	M	skin	malignant_melanoma
+HS939T_SKIN	Hs 939.T	F	skin	malignant_melanoma
+HS940T_SKIN	Hs 940.T	M	skin	malignant_melanoma
+HS944T_SKIN	Hs 944.T	M	skin	malignant_melanoma
+HSC2_UPPER_AERODIGESTIVE_TRACT	HSC-2	M	upper_aerodigestive_tract	carcinoma
+HSC3_UPPER_AERODIGESTIVE_TRACT	HSC-3	M	upper_aerodigestive_tract	carcinoma
+HSC4_UPPER_AERODIGESTIVE_TRACT	HSC-4	M	upper_aerodigestive_tract	carcinoma
+HT1080_SOFT_TISSUE	HT-1080	M	soft_tissue	fibrosarcoma
+HT115_LARGE_INTESTINE	HT115		large_intestine	carcinoma
+HT1197_URINARY_TRACT	HT-1197	M	urinary_tract	carcinoma
+HT1376_URINARY_TRACT	HT-1376	F	urinary_tract	carcinoma
+HT144_SKIN	HT-144	M	skin	malignant_melanoma
+HT29_LARGE_INTESTINE	HT-29	F	large_intestine	carcinoma
+HT55_LARGE_INTESTINE	HT55		large_intestine	carcinoma
+HT_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HT	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HTK_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HTK-	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HUCCT1_BILIARY_TRACT	HuCCT1	M	biliary_tract	carcinoma
+HUG1N_STOMACH	HuG1-N	M	stomach	carcinoma
+HUH1_LIVER	huH-1	M	liver	carcinoma
+HUH28_BILIARY_TRACT	HuH28		biliary_tract	carcinoma
+HUH6_LIVER	HuH-6		liver	other
+HUH7_LIVER	HuH-7	M	liver	carcinoma
+HUNS1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HuNS1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HUPT3_PANCREAS	HUP-T3	M	pancreas	carcinoma
+HUPT4_PANCREAS	HUP-T4	M	pancreas	carcinoma
+HUT102_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HuT 102	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HUT78_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	HuT 78	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+HUTU80_SMALL_INTESTINE	HuTu 80		small_intestine	carcinoma
+IALM_LUNG	IA-LM	M	lung	carcinoma
+IGR1_SKIN	IGR-1	M	skin	malignant_melanoma
+IGR37_SKIN	IGR-37	M	skin	malignant_melanoma
+IGR39_SKIN	IGR-39	M	skin	malignant_melanoma
+IGROV1_OVARY	IGROV1	F	ovary	carcinoma
+IM95_STOMACH	IM95	M	stomach	carcinoma
+IMR32_AUTONOMIC_GANGLIA	IMR-32	M	autonomic_ganglia	neuroblastoma
+IOMMLEE_CENTRAL_NERVOUS_SYSTEM	IOMM-Lee		central_nervous_system	meningioma
+IPC298_SKIN	IPC-298	F	skin	malignant_melanoma
+ISHIKAWAHERAKLIO02ER_ENDOMETRIUM	Ishikawa (Heraklio) 02 ER-	F	endometrium	carcinoma
+ISTMES1_PLEURA	IST-MES1	F	pleura	mesothelioma
+ISTMES2_PLEURA	IST-MES2	M	pleura	mesothelioma
+J82_URINARY_TRACT	J82	M	urinary_tract	carcinoma
+JEKO1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	JeKo-1	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+JHESOAD1_OESOPHAGUS	JH-EsoAd1		oesophagus	carcinoma
+JHH1_LIVER	JHH-1	M	liver	carcinoma
+JHH2_LIVER	JHH-2	M	liver	carcinoma
+JHH4_LIVER	JHH-4	M	liver	carcinoma
+JHH5_LIVER	JHH-5	M	liver	carcinoma
+JHH6_LIVER	JHH-6	F	liver	carcinoma
+JHH7_LIVER	JHH-7	M	liver	carcinoma
+JHOC5_OVARY	JHOC-5		ovary	carcinoma
+JHOM1_OVARY	JHOM-1		ovary	carcinoma
+JHOM2B_OVARY	JHOM-2B		ovary	carcinoma
+JHOS2_OVARY	JHOS-2	F	ovary	carcinoma
+JHOS4_OVARY	JHOS-4	F	ovary	carcinoma
+JHUEM1_ENDOMETRIUM	JHUEM-1	F	endometrium	carcinoma
+JHUEM2_ENDOMETRIUM	JHUEM-2	F	endometrium	carcinoma
+JHUEM3_ENDOMETRIUM	JHUEM-3		endometrium	carcinoma
+JHUEM7_ENDOMETRIUM	JHUEM-7	F	endometrium	carcinoma
+JIMT1_BREAST	JIMT-1	F	breast	carcinoma
+JJN3_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	JJN-3	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+JK1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	JK-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+JL1_PLEURA	JL-1	M	pleura	mesothelioma
+JM1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	JM1		haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+JMSU1_URINARY_TRACT	JMSU-1	M	urinary_tract	carcinoma
+JURKAT_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	JURKAT	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+JURLMK1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	JURL-MK1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+JVM2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	JVM-2	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+JVM3_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	JVM-3	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+K029AX_SKIN	K029AX		skin	malignant_melanoma
+K562_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	K-562	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+KALS1_CENTRAL_NERVOUS_SYSTEM	KALS-1	F	central_nervous_system	glioma
+KARPAS299_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KARPAS-299	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KARPAS422_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KARPAS-422		haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KARPAS620_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KARPAS-620	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KASUMI1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KASUMI-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+KASUMI2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KASUMI-2	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KASUMI6_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Kasumi-6	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+KATOIII_STOMACH	KATO III	M	stomach	carcinoma
+KCIMOH1_PANCREAS	KCI-MOH1	F	pancreas	carcinoma
+KCL22_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KCL-22	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+KE37_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KE-37	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KE39_STOMACH	KE-39	M	stomach	carcinoma
+KE97_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KE-97	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KELLY_AUTONOMIC_GANGLIA	KELLY		autonomic_ganglia	neuroblastoma
+KG1C_CENTRAL_NERVOUS_SYSTEM	KG-1-C	M	central_nervous_system	glioma
+KG1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KG-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+KHM1B_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KHM-1B	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KIJK_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Ki-JK	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KLE_ENDOMETRIUM	KLE	F	endometrium	carcinoma
+KLM1_PANCREAS	KLM-1		pancreas	carcinoma
+KM12_LARGE_INTESTINE	KM12		large_intestine	carcinoma
+KMBC2_URINARY_TRACT	KMBC-2		urinary_tract	carcinoma
+KMH2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KM-H2	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMM1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMM-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMRC1_KIDNEY	KMRC-1	M	kidney	carcinoma
+KMRC20_KIDNEY	KMRC-20		kidney	carcinoma
+KMRC2_KIDNEY	KMRC-2	M	kidney	carcinoma
+KMRC3_KIDNEY	KMRC-3		kidney	carcinoma
+KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-11	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMS12BM_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-12-BM	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMS18_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-18	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMS20_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-20	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMS21BM_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-21BM	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMS26_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-26	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMS27_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-27	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMS28BM_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-28BM	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KMS34_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KMS-34	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KNS42_CENTRAL_NERVOUS_SYSTEM	KNS-42	M	central_nervous_system	glioma
+KNS60_CENTRAL_NERVOUS_SYSTEM	KNS-60	M	central_nervous_system	glioma
+KNS62_LUNG	KNS-62	M	lung	carcinoma
+KNS81_CENTRAL_NERVOUS_SYSTEM	KNS-81	M	central_nervous_system	glioma
+KO52_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KO52	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+KOPN8_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KOPN-8	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+KP1NL_PANCREAS	KP-1NL		pancreas	carcinoma
+KP1N_PANCREAS	KP-1N		pancreas	carcinoma
+KP2_PANCREAS	KP-2	F	pancreas	carcinoma
+KP3_PANCREAS	KP-3		pancreas	carcinoma
+KP4_PANCREAS	KP4	M	pancreas	carcinoma
+KPL1_BREAST	KPL-1	F	breast	carcinoma
+KPNRTBM1_AUTONOMIC_GANGLIA	KP-N-RT-BM-1		autonomic_ganglia	neuroblastoma
+KPNSI9S_AUTONOMIC_GANGLIA	KP-N-SI9s	M	autonomic_ganglia	neuroblastoma
+KPNYN_AUTONOMIC_GANGLIA	KP-N-YN		autonomic_ganglia	neuroblastoma
+KS1_CENTRAL_NERVOUS_SYSTEM	KS-1	F	central_nervous_system	glioma
+KU1919_URINARY_TRACT	KU-19-19	M	urinary_tract	carcinoma
+KU812_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KU812	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+KURAMOCHI_OVARY	KURAMOCHI	F	ovary	carcinoma
+KYM1_SOFT_TISSUE	KYM-1		soft_tissue	rhabdomyosarcoma
+KYO1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	KYO-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+KYSE140_OESOPHAGUS	KYSE-140	M	oesophagus	carcinoma
+KYSE150_OESOPHAGUS	KYSE-150	F	oesophagus	carcinoma
+KYSE180_OESOPHAGUS	KYSE-180	M	oesophagus	carcinoma
+KYSE270_OESOPHAGUS	KYSE-270	M	oesophagus	carcinoma
+KYSE30_OESOPHAGUS	KYSE-30	M	oesophagus	carcinoma
+KYSE410_OESOPHAGUS	KYSE-410	M	oesophagus	carcinoma
+KYSE450_OESOPHAGUS	KYSE-450	M	oesophagus	carcinoma
+KYSE510_OESOPHAGUS	KYSE-510	F	oesophagus	carcinoma
+KYSE520_OESOPHAGUS	KYSE-520	F	oesophagus	carcinoma
+KYSE70_OESOPHAGUS	KYSE-70	M	oesophagus	carcinoma
+L1236_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	L-1236	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+L33_PANCREAS	L3.3		pancreas	carcinoma
+L363_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	L-363	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+L428_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	L-428	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+L540_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	L-540	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+LAMA84_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	LAMA-84	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+LC1F_LUNG	LC-1F	M	lung	carcinoma
+LC1SQSF_LUNG	LC-1/sq-SF	M	lung	carcinoma
+LCLC103H_LUNG	LCLC-103H	M	lung	carcinoma
+LCLC97TM1_LUNG	LCLC-97TM1	M	lung	carcinoma
+LI7_LIVER	Li-7		liver	carcinoma
+LK2_LUNG	LK-2	M	lung	carcinoma
+LMSU_STOMACH	LMSU		stomach	carcinoma
+LN18_CENTRAL_NERVOUS_SYSTEM	LN-18	M	central_nervous_system	glioma
+LN215_CENTRAL_NERVOUS_SYSTEM	LN-215		central_nervous_system	glioma
+LN229_CENTRAL_NERVOUS_SYSTEM	LN-229	F	central_nervous_system	glioma
+LN235_CENTRAL_NERVOUS_SYSTEM	LN-235		central_nervous_system	glioma
+LN319_CENTRAL_NERVOUS_SYSTEM	LN-319		central_nervous_system	glioma
+LN340_CENTRAL_NERVOUS_SYSTEM	LN-340		central_nervous_system	glioma
+LN382_CENTRAL_NERVOUS_SYSTEM	LN382		central_nervous_system	glioma
+LN428_CENTRAL_NERVOUS_SYSTEM	LN-428		central_nervous_system	glioma
+LN443_CENTRAL_NERVOUS_SYSTEM	LN-443		central_nervous_system	glioma
+LN464_CENTRAL_NERVOUS_SYSTEM	LN-464		central_nervous_system	glioma
+LNCAPCLONEFGC_PROSTATE	LNCaP clone FGC	M	prostate	carcinoma
+LNZ308_CENTRAL_NERVOUS_SYSTEM	LNZ308		central_nervous_system	glioma
+LOUCY_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Loucy	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+LOUNH91_LUNG	LOU-NH91	F	lung	carcinoma
+LOVO_LARGE_INTESTINE	LoVo	M	large_intestine	carcinoma
+LOXIMVI_SKIN	LOX IMVI		skin	malignant_melanoma
+LP1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	LP-1	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+LS1034_LARGE_INTESTINE	LS1034	M	large_intestine	carcinoma
+LS123_LARGE_INTESTINE	LS123	F	large_intestine	carcinoma
+LS180_LARGE_INTESTINE	LS 180	F	large_intestine	carcinoma
+LS411N_LARGE_INTESTINE	LS411N	M	large_intestine	carcinoma
+LS513_LARGE_INTESTINE	LS513	M	large_intestine	carcinoma
+LU65_LUNG	LU65	M	lung	carcinoma
+LU99_LUNG	LU99	M	lung	carcinoma
+LUDLU1_LUNG	LUDLU-1	M	lung	carcinoma
+LXF289_LUNG	LXF-289	M	lung	carcinoma
+M059K_CENTRAL_NERVOUS_SYSTEM	M059K	M	central_nervous_system	glioma
+M07E_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	M-07e	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MALME3M_SKIN	Malme-3M	M	skin	malignant_melanoma
+MB157_BREAST	MB 157	F	breast	carcinoma
+MC116_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MC116	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MCAS_OVARY	MCAS	F	ovary	carcinoma
+MCF7_BREAST	MCF7	F	breast	carcinoma
+MDAMB134VI_BREAST	MDA-MB-134-VI	F	breast	carcinoma
+MDAMB157_BREAST	MDA-MB-157	F	breast	carcinoma
+MDAMB175VII_BREAST	MDA-MB-175-VII	F	breast	carcinoma
+MDAMB231_BREAST	MDA-MB-231	F	breast	carcinoma
+MDAMB361_BREAST	MDA-MB-361	F	breast	carcinoma
+MDAMB415_BREAST	MDA-MB-415	F	breast	carcinoma
+MDAMB435S_SKIN	MDA-MB-435S	F	skin	malignant_melanoma
+MDAMB436_BREAST	MDA-MB-436	F	breast	carcinoma
+MDAMB453_BREAST	MDA-MB-453	F	breast	carcinoma
+MDAMB468_BREAST	MDA-MB-468	F	breast	carcinoma
+MDAPCA2B_PROSTATE	MDA PCa 2b	M	prostate	carcinoma
+MDST8_LARGE_INTESTINE	MDST8		large_intestine	carcinoma
+ME1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	ME-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MEC1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MEC-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MEC2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MEC-2	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MEG01_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MEG-01	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MELHO_SKIN	MEL-HO	F	skin	malignant_melanoma
+MELJUSO_SKIN	MEL-JUSO	F	skin	malignant_melanoma
+MESSA_SOFT_TISSUE	MES-SA	F	soft_tissue	sarcoma
+MEWO_SKIN	MeWo	M	skin	malignant_melanoma
+MFE280_ENDOMETRIUM	MFE-280	F	endometrium	carcinoma
+MFE296_ENDOMETRIUM	MFE-296	F	endometrium	carcinoma
+MFE319_ENDOMETRIUM	MFE-319	F	endometrium	carcinoma
+MG63_BONE	MG-63	M	bone	osteosarcoma
+MHHCALL2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MHH-CALL-2	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MHHCALL3_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MHH-CALL-3	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MHHCALL4_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MHH-CALL-4	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MHHES1_BONE	MHH-ES-1	M	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+MHHNB11_AUTONOMIC_GANGLIA	MHH-NB-11	M	autonomic_ganglia	neuroblastoma
+MIAPACA2_PANCREAS	MIA PaCa-2	M	pancreas	carcinoma
+MINO_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Mino	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MJ_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MJ	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MKN1_STOMACH	MKN1	M	stomach	carcinoma
+MKN45_STOMACH	MKN-45	F	stomach	carcinoma
+MKN74_STOMACH	MKN74	M	stomach	carcinoma
+MKN7_STOMACH	MKN7	M	stomach	carcinoma
+ML1_THYROID	ML-1	F	thyroid	carcinoma
+MM1S_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MM1-S		haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MOGGCCM_CENTRAL_NERVOUS_SYSTEM	MOG-G-CCM		central_nervous_system	glioma
+MOGGUVW_CENTRAL_NERVOUS_SYSTEM	MOG-G-UVW		central_nervous_system	glioma
+MOLM13_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOLM-13	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MOLM16_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOLM-16	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MOLM6_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOLM-6	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MOLP2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOLP-2	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MOLP8_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOLP-8	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MOLT13_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOLT-13	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MOLT16_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOLT-16	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MOLT4_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOLT-4	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MONOMAC1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MONO-MAC-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MONOMAC6_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MONO-MAC-6	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MORCPR_LUNG	MOR/CPR		lung	carcinoma
+MOTN1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MOTN-1	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MPP89_PLEURA	MPP 89	M	pleura	mesothelioma
+MSTO211H_PLEURA	MSTO-211H	M	pleura	mesothelioma
+MUTZ3_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MUTZ-3	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+MUTZ5_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MUTZ-5	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+MV411_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	MV-4-11	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+NALM19_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NALM-19	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+NALM1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NALM-1	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+NALM6_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NALM-6	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+NAMALWA_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NAMALWA	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+NB1_AUTONOMIC_GANGLIA	NB-1	M	autonomic_ganglia	neuroblastoma
+NB4_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NB-4	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+NCCSTCK140_STOMACH	NCC-StC-K140		stomach	carcinoma
+NCIH1048_LUNG	NCI-H1048	F	lung	carcinoma
+NCIH1092_LUNG	NCI-H1092	M	lung	carcinoma
+NCIH1105_LUNG	NCI-H1105	M	lung	carcinoma
+NCIH1155_LUNG	NCI-H1155	M	lung	carcinoma
+NCIH1184_LUNG	NCI-H1184	M	lung	carcinoma
+NCIH1299_LUNG	NCI-H1299	M	lung	carcinoma
+NCIH1339_LUNG	NCI-H1339	F	lung	carcinoma
+NCIH1341_LUNG	NCI-H1341	F	lung	carcinoma
+NCIH1355_LUNG	NCI-H1355	M	lung	carcinoma
+NCIH1373_LUNG	NCI-H1373	M	lung	carcinoma
+NCIH1385_LUNG	NCI-H1385	F	lung	carcinoma
+NCIH1395_LUNG	NCI-H1395	F	lung	carcinoma
+NCIH1435_LUNG	NCI-H1435	F	lung	carcinoma
+NCIH1436_LUNG	NCI-H1436	M	lung	carcinoma
+NCIH1437_LUNG	NCI-H1437	M	lung	carcinoma
+NCIH146_LUNG	NCI-H146	M	lung	carcinoma
+NCIH1563_LUNG	NCI-H1563	M	lung	carcinoma
+NCIH1568_LUNG	NCI-H1568	F	lung	carcinoma
+NCIH1573_LUNG	NCI-H1573	F	lung	carcinoma
+NCIH1581_LUNG	NCI-H1581	M	lung	carcinoma
+NCIH1618_LUNG	NCI-H1618	F	lung	carcinoma
+NCIH1623_LUNG	NCI-H1623	M	lung	carcinoma
+NCIH1648_LUNG	NCI-H1648	M	lung	carcinoma
+NCIH1650_LUNG	NCI-H1650	M	lung	carcinoma
+NCIH1651_LUNG	NCI-H1651	M	lung	carcinoma
+NCIH1666_LUNG	NCI-H1666	F	lung	carcinoma
+NCIH1693_LUNG	NCI-H1693	F	lung	carcinoma
+NCIH1694_LUNG	NCI-H1694	M	lung	carcinoma
+NCIH1703_LUNG	NCI-H1703	M	lung	carcinoma
+NCIH1734_LUNG	NCI-H1734	F	lung	carcinoma
+NCIH1755_LUNG	NCI-H1755	F	lung	carcinoma
+NCIH1781_LUNG	NCI-H1781	F	lung	carcinoma
+NCIH1792_LUNG	NCI-H1792	M	lung	carcinoma
+NCIH1793_LUNG	NCI-H1793	F	lung	carcinoma
+NCIH1836_LUNG	NCI-H1836	M	lung	carcinoma
+NCIH1838_LUNG	NCI-H1838	F	lung	carcinoma
+NCIH1869_LUNG	NCI-H1869	M	lung	carcinoma
+NCIH1876_LUNG	NCI-H1876	M	lung	carcinoma
+NCIH1915_LUNG	NCI-H1915	F	lung	carcinoma
+NCIH1930_LUNG	NCI-H1930	M	lung	carcinoma
+NCIH1944_LUNG	NCI-H1944	F	lung	carcinoma
+NCIH1963_LUNG	NCI-H1963	M	lung	carcinoma
+NCIH196_LUNG	NCI-H196	M	lung	carcinoma
+NCIH1975_LUNG	NCI-H1975	F	lung	carcinoma
+NCIH2009_LUNG	NCI-H2009	F	lung	carcinoma
+NCIH2023_LUNG	NCI-H2023	M	lung	carcinoma
+NCIH2029_LUNG	NCI-H2029	F	lung	carcinoma
+NCIH2030_LUNG	NCI-H2030	M	lung	carcinoma
+NCIH2052_PLEURA	NCI-H2052	M	pleura	mesothelioma
+NCIH2066_LUNG	NCI-H2066	F	lung	carcinoma
+NCIH2073_LUNG	NCI-H2073	F	lung	carcinoma
+NCIH2081_LUNG	NCI-H2081	F	lung	carcinoma
+NCIH2085_LUNG	NCI-H2085	M	lung	carcinoma
+NCIH2087_LUNG	NCI-H2087	M	lung	carcinoma
+NCIH209_LUNG	NCI-H209	M	lung	carcinoma
+NCIH2106_LUNG	NCI-H2106	M	lung	carcinoma
+NCIH2110_LUNG	NCI-H2110		lung	carcinoma
+NCIH211_LUNG	NCI-H211	F	lung	carcinoma
+NCIH2122_LUNG	NCI-H2122	F	lung	carcinoma
+NCIH2126_LUNG	NCI-H2126	M	lung	carcinoma
+NCIH2141_LUNG	NCI-H2141	M	lung	carcinoma
+NCIH2170_LUNG	NCI-H2170	M	lung	carcinoma
+NCIH2171_LUNG	NCI-H2171	M	lung	carcinoma
+NCIH2172_LUNG	NCI-H2172	F	lung	carcinoma
+NCIH2196_LUNG	NCI-H2196	M	lung	carcinoma
+NCIH2227_LUNG	NCI-H2227	M	lung	carcinoma
+NCIH2228_LUNG	NCI-H2228	F	lung	carcinoma
+NCIH226_LUNG	NCI-H226	M	lung	carcinoma
+NCIH2286_LUNG	NCI-H2286	F	lung	carcinoma
+NCIH2291_LUNG	NCI-H2291	M	lung	carcinoma
+NCIH2342_LUNG	NCI-H2342	M	lung	carcinoma
+NCIH2347_LUNG	NCI-H2347	F	lung	carcinoma
+NCIH23_LUNG	NCI-H23	M	lung	carcinoma
+NCIH2405_LUNG	NCI-H2405	M	lung	carcinoma
+NCIH2444_LUNG	NCI-H2444	M	lung	carcinoma
+NCIH2452_PLEURA	NCI-H2452	M	pleura	mesothelioma
+NCIH28_PLEURA	NCI-H28	M	pleura	mesothelioma
+NCIH292_LUNG	NCI-H292	F	lung	carcinoma
+NCIH322_LUNG	NCI-H322	M	lung	carcinoma
+NCIH3255_LUNG	NCI-H3255	F	lung	carcinoma
+NCIH358_LUNG	NCI-H358	M	lung	carcinoma
+NCIH441_LUNG	NCI-H441	M	lung	carcinoma
+NCIH446_LUNG	NCI-H446	M	lung	carcinoma
+NCIH460_LUNG	NCI-H460	M	lung	carcinoma
+NCIH508_LARGE_INTESTINE	NCI-H508	M	large_intestine	carcinoma
+NCIH510_LUNG	NCI-H510	M	lung	carcinoma
+NCIH520_LUNG	NCI-H520	M	lung	carcinoma
+NCIH522_LUNG	NCI-H522	M	lung	carcinoma
+NCIH524_LUNG	NCI-H524	M	lung	carcinoma
+NCIH526_LUNG	NCI-H526	M	lung	carcinoma
+NCIH596_LUNG	NCI-H596	M	lung	carcinoma
+NCIH647_LUNG	NCI-H647	M	lung	carcinoma
+NCIH650_LUNG	NCI-H650	M	lung	carcinoma
+NCIH660_PROSTATE	NCI-H660	M	prostate	carcinoma
+NCIH661_LUNG	NCI-H661	M	lung	carcinoma
+NCIH684_LIVER	NCI-H684		liver	other
+NCIH69_LUNG	NCI-H69	M	lung	carcinoma
+NCIH716_LARGE_INTESTINE	NCI-H716		large_intestine	carcinoma
+NCIH727_LUNG	NCI-H727	F	lung	carcinoid-endocrine_tumour
+NCIH747_LARGE_INTESTINE	NCI-H747	M	large_intestine	carcinoma
+NCIH810_LUNG	NCI-H810	M	lung	carcinoma
+NCIH82_LUNG	NCI-H82	M	lung	carcinoma
+NCIH838_LUNG	NCI-H838	M	lung	carcinoma
+NCIH841_LUNG	NCI-H841	M	lung	carcinoma
+NCIH854_LUNG	NCI-H854		lung	carcinoma
+NCIH889_LUNG	NCI-H889	F	lung	carcinoma
+NCIH929_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NCI-H929	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+NCIN87_STOMACH	NCI-N87	M	stomach	carcinoma
+NCO2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NCO2	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+NH6_AUTONOMIC_GANGLIA	NH-6		autonomic_ganglia	neuroblastoma
+NIHOVCAR3_OVARY	NIH:OVCAR-3	F	ovary	carcinoma
+NMCG1_CENTRAL_NERVOUS_SYSTEM	NMC-G1		central_nervous_system	glioma
+NOMO1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NOMO-1	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+NUDHL1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NU-DHL-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+NUDUL1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	NU-DUL-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+NUGC2_STOMACH	NUGC-2	F	stomach	carcinoma
+NUGC3_STOMACH	NUGC-3	M	stomach	carcinoma
+NUGC4_STOMACH	NUGC-4		stomach	carcinoma
+OAW28_OVARY	OAW28	F	ovary	carcinoma
+OAW42_OVARY	OAW42	F	ovary	carcinoma
+OC314_OVARY	OC 314	F	ovary	carcinoma
+OC315_OVARY	OC 315	F	ovary	carcinoma
+OC316_OVARY	OC 316	F	ovary	carcinoma
+OCIAML2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	OCI-AML2	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+OCIAML3_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	OCI-AML3	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+OCIAML5_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	OCI-AML5	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+OCILY10_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	OCI-LY10		haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+OCILY19_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	OCI-LY-19	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+OCILY3_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	OCI-LY3		haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+OCIM1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	OCI-M1		haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+OCUM1_STOMACH	OCUM-1	F	stomach	carcinoma
+OE19_OESOPHAGUS	OE19	M	oesophagus	carcinoma
+OE21_OESOPHAGUS	OE21	M	oesophagus	carcinoma
+OE33_OESOPHAGUS	OE33	F	oesophagus	other
+OELE_OVARY	OELE		ovary	other
+ONCODG1_OVARY	ONCO-DG-1	F	ovary	carcinoma
+ONS76_CENTRAL_NERVOUS_SYSTEM	ONS-76	F	central_nervous_system	primitive_neuroectodermal_tumour-medulloblastoma
+OPM2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	OPM-2	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+OSRC2_KIDNEY	OS-RC-2		kidney	carcinoma
+OUMS23_LARGE_INTESTINE	OUMS-23		large_intestine	carcinoma
+OUMS27_BONE	OUMS-27	M	bone	chondrosarcoma
+OV56_OVARY	OV56	F	ovary	carcinoma
+OV7_OVARY	OV7	F	ovary	carcinoma
+OV90_OVARY	OV-90	F	ovary	carcinoma
+OVCAR4_OVARY	OVCAR-4	F	ovary	carcinoma
+OVCAR8_OVARY	OVCAR-8	F	ovary	carcinoma
+OVISE_OVARY	OVISE	F	ovary	carcinoma
+OVK18_OVARY	OVK18		ovary	carcinoma
+OVKATE_OVARY	OVKATE	F	ovary	carcinoma
+OVMANA_OVARY	OVMANA	F	ovary	carcinoma
+OVSAHO_OVARY	OVSAHO	F	ovary	carcinoma
+OVTOKO_OVARY	OVTOKO	F	ovary	carcinoma
+P12ICHIKAWA_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	P12-ICHIKAWA	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+P31FUJ_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	P31/FUJ	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+P3HR1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	P3HR-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+PANC0203_PANCREAS	Panc 02.03	F	pancreas	carcinoma
+PANC0213_PANCREAS	Panc 02.13	F	pancreas	carcinoma
+PANC0327_PANCREAS	Panc 03.27	F	pancreas	carcinoma
+PANC0403_PANCREAS	Panc 04.03	M	pancreas	carcinoma
+PANC0504_PANCREAS	Panc 05.04	F	pancreas	carcinoma
+PANC0813_PANCREAS	Panc 08.13	M	pancreas	carcinoma
+PANC1005_PANCREAS	Panc 10.05	M	pancreas	carcinoma
+PANC1_PANCREAS	PANC-1		pancreas	carcinoma
+PATU8902_PANCREAS	PA-TU-8902	F	pancreas	carcinoma
+PATU8988S_PANCREAS	PA-TU-8988S	F	pancreas	carcinoma
+PATU8988T_PANCREAS	PA-TU-8988T	F	pancreas	carcinoma
+PC14_LUNG	PC-14		lung	carcinoma
+PC3_PROSTATE	PC-3	M	prostate	carcinoma
+PCM6_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	PCM6	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+PECAPJ15_UPPER_AERODIGESTIVE_TRACT	PE/CA-PJ15	M	upper_aerodigestive_tract	carcinoma
+PECAPJ34CLONEC12_UPPER_AERODIGESTIVE_TRACT	PE/CA-PJ34 (clone C12)	M	upper_aerodigestive_tract	carcinoma
+PECAPJ41CLONED2_UPPER_AERODIGESTIVE_TRACT	PE/CA-PJ41 (clone D2)	F	upper_aerodigestive_tract	carcinoma
+PECAPJ49_UPPER_AERODIGESTIVE_TRACT	PE/CA-PJ49	M	upper_aerodigestive_tract	carcinoma
+PEER_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	PEER	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+PF382_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	PF-382	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+PFEIFFER_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Pfeiffer	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+PK1_PANCREAS	PK-1		pancreas	carcinoma
+PK45H_PANCREAS	PK-45H		pancreas	carcinoma
+PK59_PANCREAS	PK-59		pancreas	carcinoma
+PL21_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	PL-21	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+PL45_PANCREAS	PL45	M	pancreas	carcinoma
+PLCPRF5_LIVER	PLC/PRF/5	M	liver	carcinoma
+PRECLH_PROSTATE	PrEC LH		prostate	other
+PSN1_PANCREAS	PSN1		pancreas	carcinoma
+QGP1_PANCREAS	QGP-1		pancreas	carcinoma
+RAJI_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Raji	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+RCC10RGB_KIDNEY	RCC10RGB		kidney	carcinoma
+RCC4_KIDNEY	RCC-4		kidney	carcinoma
+RCHACV_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	RCH-ACV	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+RCM1_LARGE_INTESTINE	RCM-1		large_intestine	carcinoma
+RDES_BONE	RD-ES	M	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+RD_SOFT_TISSUE	RD	F	soft_tissue	rhabdomyosarcoma
+REC1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	REC-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+REH_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Reh		haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+RERFGC1B_STOMACH	RERF-GC-1B	M	stomach	carcinoma
+RERFLCAD1_LUNG	RERF-LC-Ad1	M	lung	carcinoma
+RERFLCAD2_LUNG	RERF-LC-Ad2	M	lung	carcinoma
+RERFLCAI_LUNG	RERF-LC-AI	M	lung	carcinoma
+RERFLCKJ_LUNG	RERF-LC-KJ	M	lung	carcinoma
+RERFLCMS_LUNG	RERF-LC-MS		lung	carcinoma
+RERFLCSQ1_LUNG	RERF-LC-Sq1	F	lung	carcinoma
+RH18_SOFT_TISSUE	RH-18		soft_tissue	rhabdomyosarcoma
+RH30_SOFT_TISSUE	RH-30	M	soft_tissue	rhabdomyosarcoma
+RH41_SOFT_TISSUE	RH-41	F	soft_tissue	rhabdomyosarcoma
+RI1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	RI-1	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+RKN_SOFT_TISSUE	RKN	F	soft_tissue	leiomyosarcoma
+RKO_LARGE_INTESTINE	RKO		large_intestine	carcinoma
+RL952_ENDOMETRIUM	RL95-2	F	endometrium	carcinoma
+RL_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	RL	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+RMGI_OVARY	RMG-I	F	ovary	carcinoma
+RMUGS_OVARY	RMUG-S	F	ovary	carcinoma
+RPMI7951_SKIN	RPMI-7951	F	skin	malignant_melanoma
+RPMI8226_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	RPMI 8226	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+RPMI8402_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	RPMI-8402	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+RS411_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	RS4;11	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+RS5_PLEURA	RS-5	M	pleura	mesothelioma
+RT11284_URINARY_TRACT	RT112/84	F	urinary_tract	carcinoma
+RT112_URINARY_TRACT	RT-112	F	urinary_tract	carcinoma
+RT4_URINARY_TRACT	RT4	M	urinary_tract	carcinoma
+RVH421_SKIN	RVH-421	M	skin	malignant_melanoma
+S117_SOFT_TISSUE	S-117	F	soft_tissue	sarcoma
+SALE_LUNG	SALE		lung	other
+SAOS2_BONE	Saos-2	F	bone	osteosarcoma
+SBC5_LUNG	SBC-5		lung	carcinoma
+SCABER_URINARY_TRACT	SCaBER	M	urinary_tract	carcinoma
+SCC15_UPPER_AERODIGESTIVE_TRACT	SCC-15	M	upper_aerodigestive_tract	carcinoma
+SCC25_UPPER_AERODIGESTIVE_TRACT	SCC-25	M	upper_aerodigestive_tract	carcinoma
+SCC4_UPPER_AERODIGESTIVE_TRACT	SCC-4	M	upper_aerodigestive_tract	carcinoma
+SCC9_UPPER_AERODIGESTIVE_TRACT	SCC-9	M	upper_aerodigestive_tract	carcinoma
+SCLC21H_LUNG	SCLC-21H	M	lung	carcinoma
+SEM_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SEM	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SET2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Set-2	F	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+SF126_CENTRAL_NERVOUS_SYSTEM	SF126		central_nervous_system	glioma
+SF172_CENTRAL_NERVOUS_SYSTEM	SF-172		central_nervous_system	glioma
+SF295_CENTRAL_NERVOUS_SYSTEM	SF-295		central_nervous_system	glioma
+SF767_CENTRAL_NERVOUS_SYSTEM	SF767		central_nervous_system	glioma
+SH10TC_STOMACH	SH-10-TC		stomach	carcinoma
+SH4_SKIN	SH-4	F	skin	malignant_melanoma
+SHP77_LUNG	SHP-77	M	lung	carcinoma
+SHSY5Y_AUTONOMIC_GANGLIA	SH-SY5Y	F	autonomic_ganglia	neuroblastoma
+SIGM5_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SIG-M5	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+SIMA_AUTONOMIC_GANGLIA	SIMA	M	autonomic_ganglia	neuroblastoma
+SJRH30_SOFT_TISSUE	SJRH30	M	soft_tissue	rhabdomyosarcoma
+SJSA1_BONE	SJSA-1	M	bone	osteosarcoma
+SKBR3_BREAST	SK-BR-3	F	breast	carcinoma
+SKCO1_LARGE_INTESTINE	SK-CO-1	M	large_intestine	carcinoma
+SKES1_BONE	SK-ES-1	M	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+SKHEP1_LIVER	SK-HEP-1	M	liver	carcinoma
+SKLMS1_SOFT_TISSUE	SK-LMS-1	F	soft_tissue	sarcoma
+SKLU1_LUNG	SK-LU-1	F	lung	carcinoma
+SKM1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SKM-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+SKMEL1_SKIN	SK-MEL-1	M	skin	malignant_melanoma
+SKMEL24_SKIN	SK-MEL-24	M	skin	malignant_melanoma
+SKMEL28_SKIN	SK-MEL-28	M	skin	malignant_melanoma
+SKMEL2_SKIN	SK-MEL-2	M	skin	malignant_melanoma
+SKMEL30_SKIN	SK-MEL-30	M	skin	malignant_melanoma
+SKMEL31_SKIN	SK-MEL-31	F	skin	malignant_melanoma
+SKMEL3_SKIN	SK-MEL-3	F	skin	malignant_melanoma
+SKMEL5_SKIN	SK-MEL-5	F	skin	malignant_melanoma
+SKMES1_LUNG	SK-MES-1	M	lung	carcinoma
+SKMM2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SK-MM-2	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SKNAS_AUTONOMIC_GANGLIA	SK-N-AS	F	autonomic_ganglia	neuroblastoma
+SKNBE2_AUTONOMIC_GANGLIA	SK-N-BE(2)	M	autonomic_ganglia	neuroblastoma
+SKNDZ_AUTONOMIC_GANGLIA	SK-N-DZ	F	autonomic_ganglia	neuroblastoma
+SKNFI_AUTONOMIC_GANGLIA	SK-N-FI	M	autonomic_ganglia	neuroblastoma
+SKNMC_BONE	SK-N-MC	F	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+SKNSH_AUTONOMIC_GANGLIA	SK-N-SH	F	autonomic_ganglia	neuroblastoma
+SKOV3_OVARY	SK-OV-3	F	ovary	carcinoma
+SKRC20_KIDNEY	SK-RC-20		kidney	carcinoma
+SKRC31_KIDNEY	SK-RC 31		kidney	carcinoma
+SKUT1_SOFT_TISSUE	SK-UT-1	F	soft_tissue	leiomyosarcoma
+SLR20_KIDNEY	SLR 20		kidney	carcinoma
+SLR21_KIDNEY	SLR 21		kidney	carcinoma
+SLR23_KIDNEY	SLR 23		kidney	carcinoma
+SLR24_KIDNEY	SLR 24		kidney	carcinoma
+SLR25_KIDNEY	SLR 25		kidney	carcinoma
+SLR26_KIDNEY	SLR 26		kidney	carcinoma
+SNB19_CENTRAL_NERVOUS_SYSTEM	SNB-19	M	central_nervous_system	glioma
+SNGM_ENDOMETRIUM	SNG-M	F	endometrium	carcinoma
+SNU1033_LARGE_INTESTINE	SNU-1033	F	large_intestine	carcinoma
+SNU1040_LARGE_INTESTINE	SNU-1040	M	large_intestine	carcinoma
+SNU1041_UPPER_AERODIGESTIVE_TRACT	SNU-1041		upper_aerodigestive_tract	carcinoma
+SNU1066_UPPER_AERODIGESTIVE_TRACT	SNU-1066	M	upper_aerodigestive_tract	carcinoma
+SNU1076_UPPER_AERODIGESTIVE_TRACT	SNU-1076	M	upper_aerodigestive_tract	carcinoma
+SNU1077_ENDOMETRIUM	SNU-1077	F	endometrium	carcinoma
+SNU1079_BILIARY_TRACT	SNU-1079		biliary_tract	carcinoma
+SNU1105_CENTRAL_NERVOUS_SYSTEM	SNU-1105	M	central_nervous_system	glioma
+SNU1196_BILIARY_TRACT	SNU-1196		biliary_tract	carcinoma
+SNU1197_LARGE_INTESTINE	SNU-1197	M	large_intestine	carcinoma
+SNU119_OVARY	SNU-119	F	ovary	carcinoma
+SNU1214_UPPER_AERODIGESTIVE_TRACT	SNU-1214	M	upper_aerodigestive_tract	carcinoma
+SNU1272_KIDNEY	SNU-1272	F	kidney	carcinoma
+SNU16_STOMACH	SNU-16	F	stomach	carcinoma
+SNU175_LARGE_INTESTINE	SNU-175	F	large_intestine	carcinoma
+SNU182_LIVER	SNU-182	M	liver	carcinoma
+SNU1_STOMACH	SNU-1	M	stomach	carcinoma
+SNU201_CENTRAL_NERVOUS_SYSTEM	SNU-201	M	central_nervous_system	glioma
+SNU213_PANCREAS	SNU-213	M	pancreas	carcinoma
+SNU216_STOMACH	SNU-216	F	stomach	carcinoma
+SNU245_BILIARY_TRACT	SNU-245		biliary_tract	carcinoma
+SNU283_LARGE_INTESTINE	SNU-283	F	large_intestine	carcinoma
+SNU308_BILIARY_TRACT	SNU-308		biliary_tract	carcinoma
+SNU324_PANCREAS	SNU-324	M	pancreas	carcinoma
+SNU349_KIDNEY	SNU-349	M	kidney	carcinoma
+SNU387_LIVER	SNU-387	F	liver	carcinoma
+SNU398_LIVER	SNU-398	M	liver	carcinoma
+SNU407_LARGE_INTESTINE	SNU-407	M	large_intestine	carcinoma
+SNU410_PANCREAS	SNU-410	M	pancreas	carcinoma
+SNU423_LIVER	SNU-423	M	liver	carcinoma
+SNU449_LIVER	SNU-449	M	liver	carcinoma
+SNU466_CENTRAL_NERVOUS_SYSTEM	SNU-466	M	central_nervous_system	glioma
+SNU46_UPPER_AERODIGESTIVE_TRACT	SNU-46	M	upper_aerodigestive_tract	carcinoma
+SNU475_LIVER	SNU-475	M	liver	carcinoma
+SNU478_BILIARY_TRACT	SNU-478		biliary_tract	carcinoma
+SNU489_CENTRAL_NERVOUS_SYSTEM	SNU-489	M	central_nervous_system	glioma
+SNU503_LARGE_INTESTINE	SNU-503	M	large_intestine	carcinoma
+SNU520_STOMACH	SNU-520	F	stomach	carcinoma
+SNU5_STOMACH	SNU-5	F	stomach	carcinoma
+SNU601_STOMACH	SNU-601	M	stomach	carcinoma
+SNU61_LARGE_INTESTINE	SNU-61	M	large_intestine	carcinoma
+SNU620_STOMACH	SNU-620	F	stomach	carcinoma
+SNU626_CENTRAL_NERVOUS_SYSTEM	SNU-626	M	central_nervous_system	glioma
+SNU668_STOMACH	SNU-668	M	stomach	carcinoma
+SNU685_ENDOMETRIUM	SNU-685	F	endometrium	carcinoma
+SNU719_STOMACH	SNU-719	M	stomach	carcinoma
+SNU738_CENTRAL_NERVOUS_SYSTEM	SNU-738	M	central_nervous_system	glioma
+SNU761_LIVER	SNU-761	M	liver	carcinoma
+SNU81_LARGE_INTESTINE	SNU-81	M	large_intestine	carcinoma
+SNU840_OVARY	SNU-840	F	ovary	carcinoma
+SNU869_BILIARY_TRACT	SNU-869		biliary_tract	carcinoma
+SNU878_LIVER	SNU-878	F	liver	carcinoma
+SNU886_LIVER	SNU-886	M	liver	carcinoma
+SNU899_UPPER_AERODIGESTIVE_TRACT	SNU-899	M	upper_aerodigestive_tract	carcinoma
+SNU8_OVARY	SNU-8	F	ovary	carcinoma
+SNUC1_LARGE_INTESTINE	SNU-C1	M	large_intestine	carcinoma
+SNUC2A_LARGE_INTESTINE	SNU-C2A	F	large_intestine	carcinoma
+SNUC4_LARGE_INTESTINE	SNU-C4	M	large_intestine	carcinoma
+SNUC5_LARGE_INTESTINE	SNU-C5	F	large_intestine	carcinoma
+SQ1_LUNG	Sq-1		lung	carcinoma
+SR786_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SR-786	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+ST486_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	ST486	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SU8686_PANCREAS	SU.86.86	F	pancreas	carcinoma
+SUDHL10_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SU-DHL-10	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUDHL1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SU-DHL-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUDHL4_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SU-DHL-4	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUDHL5_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SU-DHL-5	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUDHL6_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SU-DHL-6	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUDHL8_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SU-DHL-8	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUIT2_PANCREAS	SUIT-2	M	pancreas	carcinoma
+SUPB15_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SUP-B15	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUPHD1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SUP-HD1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUPM2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SUP-M2	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUPT11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SUP-T11	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SUPT1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	SUP-T1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+SW1088_CENTRAL_NERVOUS_SYSTEM	SW 1088	M	central_nervous_system	glioma
+SW1116_LARGE_INTESTINE	SW1116	M	large_intestine	carcinoma
+SW1271_LUNG	SW 1271	M	lung	carcinoma
+SW1353_BONE	SW 1353	F	bone	chondrosarcoma
+SW1417_LARGE_INTESTINE	SW1417	F	large_intestine	carcinoma
+SW1463_LARGE_INTESTINE	SW1463	F	large_intestine	carcinoma
+SW1573_LUNG	SW 1573	F	lung	carcinoma
+SW1710_URINARY_TRACT	SW-1710	F	urinary_tract	carcinoma
+SW1783_CENTRAL_NERVOUS_SYSTEM	SW 1783	M	central_nervous_system	glioma
+SW1990_PANCREAS	SW 1990	M	pancreas	carcinoma
+SW403_LARGE_INTESTINE	SW403	F	large_intestine	carcinoma
+SW480_LARGE_INTESTINE	SW480	M	large_intestine	carcinoma
+SW48_LARGE_INTESTINE	SW48	F	large_intestine	carcinoma
+SW579_THYROID	SW579	M	thyroid	carcinoma
+SW620_LARGE_INTESTINE	SW620	M	large_intestine	carcinoma
+SW780_URINARY_TRACT	SW 780	F	urinary_tract	carcinoma
+SW837_LARGE_INTESTINE	SW837	M	large_intestine	carcinoma
+SW900_LUNG	SW 900	M	lung	carcinoma
+SW948_LARGE_INTESTINE	SW948	F	large_intestine	carcinoma
+T173_BONE	T1-73		bone	osteosarcoma
+T24_URINARY_TRACT	T24	F	urinary_tract	carcinoma
+T3M10_LUNG	T3M-10	M	lung	carcinoma
+T3M4_PANCREAS	T3M-4	M	pancreas	carcinoma
+T47D_BREAST	T-47D	F	breast	carcinoma
+T84_LARGE_INTESTINE	T84	M	large_intestine	carcinoma
+T98G_CENTRAL_NERVOUS_SYSTEM	T98G	M	central_nervous_system	glioma
+TALL1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	TALL-1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+TC32_BONE	TC-32		bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+TC71_BONE	TC-71	M	bone	Ewings_sarcoma-peripheral_primitive_neuroectodermal_tumour
+TCCPAN2_PANCREAS	TCC-PAN2	F	pancreas	carcinoma
+TCCSUP_URINARY_TRACT	TCCSUP	F	urinary_tract	carcinoma
+TE10_OESOPHAGUS	TE-10		oesophagus	carcinoma
+TE11_OESOPHAGUS	TE-11		oesophagus	carcinoma
+TE125T_SOFT_TISSUE	TE 125.T	F	soft_tissue	rhabdomyosarcoma
+TE14_OESOPHAGUS	TE-14		oesophagus	carcinoma
+TE159T_SOFT_TISSUE	TE 159.T	M	soft_tissue	rhabdomyosarcoma
+TE15_OESOPHAGUS	TE-15	F	oesophagus	carcinoma
+TE1_OESOPHAGUS	TE-1	M	oesophagus	carcinoma
+TE441T_SOFT_TISSUE	TE 441.T	F	soft_tissue	rhabdomyosarcoma
+TE4_OESOPHAGUS	TE-4		oesophagus	carcinoma
+TE5_OESOPHAGUS	TE-5		oesophagus	carcinoma
+TE617T_SOFT_TISSUE	TE 617.T	F	soft_tissue	rhabdomyosarcoma
+TE6_OESOPHAGUS	TE-6		oesophagus	carcinoma
+TE8_OESOPHAGUS	TE-8		oesophagus	carcinoma
+TE9_OESOPHAGUS	TE-9	M	oesophagus	carcinoma
+TEN_ENDOMETRIUM	TEN	F	endometrium	carcinoma
+TF1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	TF-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+TGBC11TKB_STOMACH	TGBC11TKB		stomach	carcinoma
+THP1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	THP-1	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+TIG3TD_LUNG	TIG-3 TD		lung	other
+TM31_CENTRAL_NERVOUS_SYSTEM	TM-31		central_nervous_system	glioma
+TO175T_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	TO 175.T	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+TOLEDO_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Toledo	F	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+TOV112D_OVARY	TOV-112D	F	ovary	carcinoma
+TOV21G_OVARY	TOV-21G	F	ovary	carcinoma
+TT2609C02_THYROID	TT2609-C02	M	thyroid	carcinoma
+TT_OESOPHAGUS	T.T	M	oesophagus	carcinoma
+TT_THYROID	TT	F	thyroid	carcinoma
+TUHR10TKB_KIDNEY	TUHR10TKB		kidney	carcinoma
+TUHR14TKB_KIDNEY	TUHR14TKB		kidney	carcinoma
+TUHR4TKB_KIDNEY	TUHR4TKB		kidney	carcinoma
+TYKNU_OVARY	TYK-nu	F	ovary	carcinoma
+U118MG_CENTRAL_NERVOUS_SYSTEM	U-118 MG	M	central_nervous_system	glioma
+U138MG_CENTRAL_NERVOUS_SYSTEM	U-138 MG	M	central_nervous_system	glioma
+U178_CENTRAL_NERVOUS_SYSTEM	U-178		central_nervous_system	glioma
+U251MG_CENTRAL_NERVOUS_SYSTEM	U-251 MG	M	central_nervous_system	glioma
+U266B1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	U266B1	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+U2OS_BONE	U-2 OS	F	bone	osteosarcoma
+U343_CENTRAL_NERVOUS_SYSTEM	U343		central_nervous_system	glioma
+U87MG_CENTRAL_NERVOUS_SYSTEM	U-87 MG	F	central_nervous_system	glioma
+U937_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	U-937	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+UACC257_SKIN	UACC-257		skin	malignant_melanoma
+UACC62_SKIN	UACC-62		skin	malignant_melanoma
+UACC812_BREAST	UACC-812	F	breast	carcinoma
+UACC893_BREAST	UACC-893	F	breast	carcinoma
+UBLC1_URINARY_TRACT	U-BLC1	F	urinary_tract	carcinoma
+UMRC2_KIDNEY	UMRC2		kidney	carcinoma
+UMRC6_KIDNEY	UMRC6		kidney	carcinoma
+UMUC1_URINARY_TRACT	UM-UC-1	M	urinary_tract	carcinoma
+UMUC3_URINARY_TRACT	UM-UC-3	M	urinary_tract	carcinoma
+UOK101_KIDNEY	UOK101		kidney	carcinoma
+UT7_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	UT-7	M	haematopoietic_and_lymphoid_tissue	haematopoietic_neoplasm
+VCAP_PROSTATE	VCaP	M	prostate	carcinoma
+VMCUB1_URINARY_TRACT	VM-CUB1	M	urinary_tract	carcinoma
+VMRCLCD_LUNG	VMRC-LCD	M	lung	carcinoma
+VMRCLCP_LUNG	VMRC-LCP		lung	carcinoma
+VMRCRCW_KIDNEY	VMRC-RCW	M	kidney	carcinoma
+VMRCRCZ_KIDNEY	VMRC-RCZ		kidney	carcinoma
+WM115_SKIN	WM-115	F	skin	malignant_melanoma
+WM1799_SKIN	WM1799		skin	malignant_melanoma
+WM2664_SKIN	WM-266-4	F	skin	malignant_melanoma
+WM793_SKIN	WM-793		skin	malignant_melanoma
+WM88_SKIN	WM-88		skin	malignant_melanoma
+WM983B_SKIN	WM-983B		skin	malignant_melanoma
+WSUDLCL2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	WSU-DLCL2	M	haematopoietic_and_lymphoid_tissue	lymphoid_neoplasm
+YAPC_PANCREAS	YAPC	M	pancreas	carcinoma
+YD10B_UPPER_AERODIGESTIVE_TRACT	YD-10B	M	upper_aerodigestive_tract	carcinoma
+YD15_SALIVARY_GLAND	YD-15	M	salivary_gland	carcinoma
+YD38_UPPER_AERODIGESTIVE_TRACT	YD-38	M	upper_aerodigestive_tract	carcinoma
+YD8_UPPER_AERODIGESTIVE_TRACT	YD-8	F	upper_aerodigestive_tract	carcinoma
+YH13_CENTRAL_NERVOUS_SYSTEM	YH-13	M	central_nervous_system	glioma
+YKG1_CENTRAL_NERVOUS_SYSTEM	YKG1	F	central_nervous_system	glioma
+YMB1_BREAST	YMB-1	F	breast	carcinoma
+ZR751_BREAST	ZR-75-1	F	breast	carcinoma
+ZR7530_BREAST	ZR-75-30	F	breast	carcinoma

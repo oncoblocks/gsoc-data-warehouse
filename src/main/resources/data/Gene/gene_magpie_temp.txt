@@ -1,3 +1,4 @@
+#Derived from ftp://ftp.ncbi.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz
 #GeneID	tax_id	Symbol	Synonyms	chromosome	type_of_gene	description
 1	9606	A1BG	A1B|ABG|GAB|HYST2477	19	glycoprotein	alpha-1-B
 2	9606	A2M	A2MD|CPAMD5|FWP007|S863-7	12	protein-coding	alpha-2-macroglobulin
