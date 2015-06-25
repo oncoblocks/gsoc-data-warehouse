@@ -24,7 +24,7 @@ public class Subject {
     private String cellLineSourceName;
     private ArrayList<String> cellLineAliases;
     private String cellLinePrimarySite;
-    private String CellLineHistology;
+    private String cellLineHistology;
 
     // Patient-specific attributes to be added
 
@@ -77,11 +77,11 @@ public class Subject {
     }
 
     public String getCellLineHistology() {
-        return CellLineHistology;
+        return cellLineHistology;
     }
 
     public void setCellLineHistology(String cellLineHistology) {
-        CellLineHistology = cellLineHistology;
+        cellLineHistology = cellLineHistology;
     }
 
     @Override
