@@ -12,6 +12,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Subject {
 
     // Common attributes
+
+
     @Id
     private String subjectId;
 
@@ -24,8 +26,7 @@ public class Subject {
     private String cellLinePrimarySite;
     private String CellLineHistology;
 
-    // Patient-specific attributes
-
+    // Patient-specific attributes to be added
 
     public String getSubjectId() {
         return subjectId;

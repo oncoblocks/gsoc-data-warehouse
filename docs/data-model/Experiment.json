@@ -13,6 +13,16 @@
     "sampleId": {
       "description": "Id of the sample on which this experiment is performed.",
       "type": "string"
+    },
+
+    "experimentType": {
+      "description": "Type of experiment, e.g. 'NIECE_p_NCLE_RNA3_HG-U133_Plus_2_B06_296024'",
+      "type": "string"
+    },
+
+    "description": {
+      "description": "Brief description for this experiment",
+      "type": "string"
     }
   }
 }
