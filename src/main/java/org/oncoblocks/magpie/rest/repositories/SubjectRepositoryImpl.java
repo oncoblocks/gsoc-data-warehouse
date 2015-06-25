@@ -1,0 +1,46 @@
+package org.oncoblocks.magpie.rest.repositories;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.oncoblocks.magpie.rest.models.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
+import java.util.List;
+
+@Component
+public class SubjectRepositoryImpl implements SubjectRepositoryCustom {
+
+    private static final Log log = LogFactory.getLog(SubjectRepositoryImpl.class);
+    private static final String COLLECTION_NAME = "subject";
+
+    @Autowired
+    private MongoTemplate mongoTemplate;
+
+    public List<Subject> find(HashMap<String, String> param) {
+        Criteria criteria = new Criteria();
+
+        String gender = param.get("gender");
+        if ( gender != null ) {
+            criteria = criteria.where("gender").regex(gender, "i");
+        }
+
+        String cellLinePrimarySite = param.get("cellLinePrimarySite");
+        if ( cellLinePrimarySite != null ) {
+            criteria = criteria.where("cellLinePrimarySite").regex(cellLinePrimarySite, "i");
+        }
+
+        String CellLineHistology = param.get("CellLineHistology");
+        if ( CellLineHistology != null ) {
+            criteria = criteria.where("CellLineHistology").regex(CellLineHistology, "i");
+        }
+
+        Query query = new Query(criteria);
+//        log.info("Query is built: " + query);
+        return mongoTemplate.find(query, Subject.class);
+    }
+}

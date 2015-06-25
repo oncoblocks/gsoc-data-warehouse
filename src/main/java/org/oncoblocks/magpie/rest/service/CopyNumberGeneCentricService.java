@@ -8,6 +8,7 @@ import org.oncoblocks.magpie.rest.repositories.CopyNumberGeneCentricRepositoryIm
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -25,14 +26,16 @@ public class CopyNumberGeneCentricService {
         return copyNumberGeneCentricRepository.findAll();
     }
 
-    public List<CopyNumberGeneCentric> findByGeneId(Integer geneId) throws Exception{
+    public List<CopyNumberGeneCentric> findByGeneId(Integer geneId) throws Exception {
         return copyNumberGeneCentricRepositoryImpl.findByGeneId(geneId);
     }
 
-    public CopyNumberGeneCentric save(CopyNumberGeneCentric copyNumberGeneCentric){
-        log.debug("Trying to save " + copyNumberGeneCentric);
+    public CopyNumberGeneCentric save(CopyNumberGeneCentric copyNumberGeneCentric) {
         copyNumberGeneCentricRepository.insert(copyNumberGeneCentric);
         return copyNumberGeneCentric;
     }
 
+    public List<CopyNumberGeneCentric> find(HashMap<String, String> param) throws Exception {
+        return copyNumberGeneCentricRepositoryImpl.find(param);
+    }
 }

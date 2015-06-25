@@ -1,5 +1,6 @@
 package org.oncoblocks.magpie.rest.controllers;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -37,6 +38,24 @@ public class CopyNumberGeneCentricController {
     public List<CopyNumberGeneCentric> findCopyNumberGeneCentricByGeneId(@PathVariable("geneId") Integer geneId){
         try{
             return copyNumberGeneCentricService.findByGeneId(geneId);
+        }
+        catch(Exception e){
+            return new ArrayList<CopyNumberGeneCentric>();
+        }
+    }
+
+    @RequestMapping(value="", method = RequestMethod.GET)
+    public List<CopyNumberGeneCentric> find(
+            @RequestParam(value = "geneId", required = false) Integer geneId,
+            @RequestParam(value = "sampleId", required = false) String sampleId
+    ){
+        try{
+            HashMap<String, String> param = new HashMap<>();
+            String geneIdString = Integer.toString(geneId);
+            param.put("geneId", geneIdString);
+            param.put("sampleId", sampleId);
+
+            return copyNumberGeneCentricService.find(param);
         }
         catch(Exception e){
             return new ArrayList<CopyNumberGeneCentric>();
