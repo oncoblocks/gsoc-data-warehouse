@@ -81,7 +81,7 @@ public class Subject {
     }
 
     public void setCellLineHistology(String cellLineHistology) {
-        cellLineHistology = cellLineHistology;
+        this.cellLineHistology = cellLineHistology;
     }
 
     @Override

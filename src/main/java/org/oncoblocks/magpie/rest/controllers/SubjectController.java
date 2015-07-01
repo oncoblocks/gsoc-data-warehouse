@@ -23,13 +23,15 @@ public class SubjectController {
     public List<Subject> find(
             @RequestParam(value = "gender", required = false) String gender,
             @RequestParam(value = "cellLinePrimarySite", required = false) String cellLinePrimarySite,
-            @RequestParam(value = "cellLineHistology", required = false) String cellLineHistology
+            @RequestParam(value = "cellLineHistology", required = false) String cellLineHistology,
+            @RequestParam(value = "fields", required = false) String fields
             ) {
                 try {
                     HashMap<String, String> param = new HashMap<>();
                     param.put("gender", gender);
                     param.put("cellLinePrimarySite", cellLinePrimarySite);
                     param.put("cellLineHistology", cellLineHistology);
+                    param.put("fields", fields);
 
                     return subjectService.find(param);
                 }

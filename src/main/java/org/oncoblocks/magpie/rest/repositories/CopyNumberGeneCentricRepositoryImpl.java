@@ -28,7 +28,6 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
     private MongoTemplate mongoTemplate;
 
     public List<CopyNumberGeneCentric> findByGeneId(Integer geneId) throws Exception {
-        mongoTemplate = new MongoTemplate(new SimpleMongoDbFactory(new MongoClient(), DB_NAME));
         return mongoTemplate.find( query( where("entrezGeneId").is(geneId) ), CopyNumberGeneCentric.class, COLLECTION_NAME );
     }
 

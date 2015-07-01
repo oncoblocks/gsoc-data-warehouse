@@ -9,6 +9,8 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -34,13 +36,22 @@ public class SubjectRepositoryImpl implements SubjectRepositoryCustom {
             criteria = criteria.where("cellLinePrimarySite").regex(cellLinePrimarySite, "i");
         }
 
-        String CellLineHistology = param.get("CellLineHistology");
-        if ( CellLineHistology != null ) {
-            criteria = criteria.where("CellLineHistology").regex(CellLineHistology, "i");
+        String cellLineHistology = param.get("cellLineHistology");
+        if ( cellLineHistology != null ) {
+            criteria = criteria.where("cellLineHistology").regex(cellLineHistology, "i");
         }
 
         Query query = new Query(criteria);
 //        log.info("Query is built: " + query);
+
+        String fieldsStr = param.get("fields");
+        if ( fieldsStr != null ) {
+            List<String> fields = Arrays.asList( fieldsStr.split(",") );
+            for ( String field : fields) {
+                query.fields().include(field);
+            }
+        }
+
         return mongoTemplate.find(query, Subject.class);
     }
 }
