@@ -20,6 +20,11 @@
       "type": "string"
     },
 
+    "dataFileId": {
+      "description": "Identifier of original data source, i.e. URL of public data repository",
+      "type": "string"
+    },
+
     "description": {
       "description": "Brief description for this experiment",
       "type": "string"

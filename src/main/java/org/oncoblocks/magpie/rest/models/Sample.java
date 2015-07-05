@@ -16,7 +16,8 @@ public class Sample {
 
     private String subjectId;
     private String cellLineOrigin;
-    private ArrayList< HashMap<String, String> > attributes;
+
+    private HashMap<String, String> attributes;
 
     public String getSampleId() {
         return sampleId;
@@ -42,11 +43,11 @@ public class Sample {
         this.cellLineOrigin = cellLineOrigin;
     }
 
-    public ArrayList<HashMap<String, String>> getAttributes() {
+    public HashMap<String, String> getAttributes() {
         return attributes;
     }
 
-    public void setAttributes(ArrayList<HashMap<String, String>> attributes) {
+    public void setAttributes(HashMap<String, String> attributes) {
         this.attributes = attributes;
     }
 

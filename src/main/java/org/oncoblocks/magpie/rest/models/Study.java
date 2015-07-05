@@ -15,7 +15,8 @@ public class Study {
     private String studyId;
 
     private String description;
-    private ArrayList< HashMap<String, String> > attributes;
+    private HashMap<String, String> attributes;
+
     public String getStudyId() {
         return studyId;
     }
@@ -32,14 +33,14 @@ public class Study {
         this.description = description;
     }
 
-    public ArrayList<HashMap<String, String>> getAttributes() {
+
+    public HashMap<String, String> getAttributes() {
         return attributes;
     }
 
-    public void setAttributes(ArrayList<HashMap<String, String>> attributes) {
+    public void setAttributes(HashMap<String, String> attributes) {
         this.attributes = attributes;
     }
-
 
     @Override
     public String toString(){

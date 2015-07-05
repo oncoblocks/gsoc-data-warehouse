@@ -1,8 +1,6 @@
 package org.oncoblocks.magpie.rest.models;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -18,11 +16,10 @@ public class Gene {
 
     private Integer taxId;
     private String geneSymbol;
-    private HashSet<String> synonyms;
+    private List<String> synonyms;
     private String chromosome;
     private String description;
     private String geneType;
-    private ArrayList< HashMap<String, String> > attributes;
 
     public Integer getEntrezGeneId() {
         return entrezGeneId;
@@ -48,11 +45,11 @@ public class Gene {
         this.geneSymbol = geneSymbol;
     }
 
-    public HashSet<String> getSynonyms() {
+    public List<String> getSynonyms() {
         return synonyms;
     }
 
-    public void setSynonyms(HashSet<String> synonyms) {
+    public void setSynonyms(List<String> synonyms) {
         this.synonyms = synonyms;
     }
 
@@ -78,14 +75,6 @@ public class Gene {
 
     public void setGeneType(String geneType) {
         this.geneType = geneType;
-    }
-
-    public ArrayList<HashMap<String, String>> getAttributes() {
-        return attributes;
-    }
-
-    public void setAttributes(ArrayList<HashMap<String, String>> attributes) {
-        this.attributes = attributes;
     }
 
 

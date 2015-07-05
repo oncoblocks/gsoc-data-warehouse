@@ -9,7 +9,7 @@ public class CopyNumberGeneCentric {
     private Integer entrezGeneId;
     private String sampleId;
     private String experimentId;
-    private Double copyNumberValue;
+    private Float copyNumberValue;
     // The following variables are normalized copy number signals
     // Variable names follow CCLE nomenclature
 
@@ -38,11 +38,11 @@ public class CopyNumberGeneCentric {
         this.experimentId = experimentId;
     }
 
-    public Double getCopyNumberValue() {
+    public Float getCopyNumberValue() {
         return copyNumberValue;
     }
 
-    public void setCopyNumberValue(Double copyNumberValue) {
+    public void setCopyNumberValue(Float copyNumberValue) {
         this.copyNumberValue = copyNumberValue;
     }
 

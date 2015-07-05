@@ -11,3 +11,6 @@ log/
 target/
 
 *.iml
+
+# Large data files
+**/copyNumberGeneCentric_CCLE_magpie.txt

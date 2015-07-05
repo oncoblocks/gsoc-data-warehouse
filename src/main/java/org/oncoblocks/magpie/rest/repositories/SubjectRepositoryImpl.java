@@ -18,7 +18,6 @@ import java.util.List;
 public class SubjectRepositoryImpl implements SubjectRepositoryCustom {
 
     private static final Log log = LogFactory.getLog(SubjectRepositoryImpl.class);
-    private static final String COLLECTION_NAME = "subject";
 
     @Autowired
     private MongoTemplate mongoTemplate;
@@ -29,6 +28,11 @@ public class SubjectRepositoryImpl implements SubjectRepositoryCustom {
         String gender = param.get("gender");
         if ( gender != null ) {
             criteria = criteria.where("gender").regex(gender, "i");
+        }
+
+        String subjectType = param.get("subjectType");
+        if ( subjectType != null ) {
+            criteria = criteria.where("subjectType").regex(subjectType, "i");
         }
 
         String cellLinePrimarySite = param.get("cellLinePrimarySite");

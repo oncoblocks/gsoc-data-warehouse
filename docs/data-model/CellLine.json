@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CellLine",
+  "description": "Cell line.",
+  "type": "object",
+
+  "allOf": [
+
+      { "$ref": "Subject.json#/properties" },
+
+      { "properties": {
+          "cellLineSourceName": {
+            "description": "Name of source cell line, if the subject is of this nature.",
+            "type": "string"
+          },
+          "cellLinePrimarySite": {
+            "description": "Primary site where this cell line is derived.",
+            "type": "string"
+          },
+          "cellLineAliases": {
+            "description": "Aliases for this cell line.",
+            "type": "array",
+            "items": {
+              "description": "An alias for this cell line.",
+              "type": "string"
+            }
+          },
+          "cellLineHistology": {
+            "description": "Histology of this cell line.",
+            "type": "string"
+          }
+        }
+      }
+    ]
+}

@@ -11,12 +11,18 @@
 	  },
 
 	  "sampleId":{
-		"description": "Id of the sample from which this data point is derived.",
+		"description": "Id of the sample(cell line) from which this data point is derived.",
 		"type": "string"
 	  },
+
 	  "experimentId":{
 		"description": "Id of the experiment from which this data point is derived.",
 		"type": "string"
+	  },
+
+	  "copyNumberValue": {
+		"description": "Normalized copy number value by gene.",
+		"type": "number"
 	  }
 	}
 }

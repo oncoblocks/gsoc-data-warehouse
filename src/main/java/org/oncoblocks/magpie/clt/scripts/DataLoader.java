@@ -4,22 +4,16 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.oncoblocks.magpie.clt.config.ApplicationConfig;
 import org.oncoblocks.magpie.clt.config.CltConfiguration;
-import org.oncoblocks.magpie.rest.models.Gene;
-import org.oncoblocks.magpie.rest.models.Sample;
-import org.oncoblocks.magpie.rest.models.Study;
-import org.oncoblocks.magpie.rest.models.Subject;
-import org.oncoblocks.magpie.rest.repositories.GeneRepository;
-import org.oncoblocks.magpie.rest.repositories.SampleRepository;
-import org.oncoblocks.magpie.rest.repositories.StudyRepository;
-import org.oncoblocks.magpie.rest.repositories.SubjectRepository;
+import org.oncoblocks.magpie.rest.models.*;
+import org.oncoblocks.magpie.rest.repositories.*;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class DataLoader {
 
@@ -70,7 +64,7 @@ public class DataLoader {
 
     }
 
-    public void loadSubjectData(File file) throws IOException {
+    public void loadCellLineData(File file) throws IOException {
 
         SubjectRepository subjectRepository = ctx.getBean(SubjectRepository.class);
         if (subjectRepository.count() > 0) {
@@ -81,20 +75,22 @@ public class DataLoader {
         BufferedReader buf = new BufferedReader(fileReader);
         String line = buf.readLine();
         int subjectCount = 0;
+        String subjectType = "cellLine";
         while (line != null) {
             if ( !line.startsWith("#") ) {
                 // Parse a line of gene record
                 String fields[] = line.split("\t");
 
-                Subject subject = new Subject();
+                CellLine cellLine = new CellLine();
 
-                subject.setSubjectId(fields[1]);
-                subject.setCellLineSourceName(fields[1]);
-                subject.setGender(fields[2]);
-                subject.setCellLinePrimarySite(fields[3]);
-                subject.setCellLineHistology(fields[4]);
+                cellLine.setSubjectId(fields[0]);
+                cellLine.setCellLineSourceName(fields[1]);
+                cellLine.setGender(fields[2]);
+                cellLine.setCellLinePrimarySite(fields[3]);
+                cellLine.setCellLineHistology(fields[4]);
+                cellLine.setSubjectType(subjectType);
 
-                subjectRepository.insert(subject);
+                subjectRepository.insert(cellLine);
                 ++subjectCount;
             }
             line = buf.readLine();
@@ -144,6 +140,46 @@ public class DataLoader {
         log.info(sampleRepository.count() + " samples records are found in the database.");
     }
 
+    public void loadCopyNumberGeneCentricData(File file) throws IOException {
+
+        CopyNumberGeneCentricRepository copyNumberGeneCentricRepository
+                = ctx.getBean(CopyNumberGeneCentricRepository.class);
+        if (copyNumberGeneCentricRepository.count() > 0) {
+            copyNumberGeneCentricRepository.deleteAll();
+        }
+
+        int entrezGeneId;
+        String sampleId;
+        Float cnvValue;
+
+        FileReader fileReader = new FileReader(file);
+        BufferedReader buf = new BufferedReader(fileReader);
+        String line = buf.readLine();
+        int cnvCount = 0;
+
+        while(line != null) {
+            if ( !line.startsWith("#") ) {
+                // Parse a line of gene record
+                String fields[] = line.split("\t");
+                CopyNumberGeneCentric cnv = new CopyNumberGeneCentric();
+
+                entrezGeneId = Integer.parseInt( fields[0] );
+                sampleId = fields[1];
+                cnvValue = Float.parseFloat( fields[3] );
+
+                cnv.setEntrezGeneId(entrezGeneId);
+                cnv.setSampleId(sampleId);
+                cnv.setCopyNumberValue(cnvValue);
+
+                copyNumberGeneCentricRepository.insert(cnv);
+                ++cnvCount;
+            }
+            line = buf.readLine();
+        }
+        log.info("Loaded " + cnvCount + " CNV records.");
+        log.info(copyNumberGeneCentricRepository.count() + " CNV records are found in the database.");
+    }
+
 
     public void loadGeneData(File file) throws IOException {
 
@@ -153,7 +189,7 @@ public class DataLoader {
         int entrezGeneId;
         int taxId;
         String geneSymbol;
-        HashSet<String> geneSynonyms = new HashSet<String>();
+        List<String> geneSynonyms = new ArrayList<>();
         String chromosome;
         String geneType;
         String description;
@@ -176,7 +212,7 @@ public class DataLoader {
                 }
 
                 if ( !( fields[3].equals("-") ) ) {
-                    geneSynonyms.addAll( Arrays.asList( fields[3].split("\\|") ) );
+                    geneSynonyms = Arrays.asList( fields[3].split("\\|") );
                 }
 
                 chromosome = fields[4];
@@ -226,11 +262,25 @@ public class DataLoader {
         else if ( dataType.equals("gene") ) {
             dataLoader.loadGeneData(file);
         }
-        else if ( dataType.equals("subject") ) {
-            dataLoader.loadSubjectData(file);
+        else if ( dataType.equals("cellLine") ) {
+            dataLoader.loadCellLineData(file);
         }
         else if ( dataType.equals("sample")) {
             dataLoader.loadSampleData(file);
+        }
+        else if ( dataType.equals("copyNumberGeneCentric") ) {
+            try {
+                long startTime = System.nanoTime();
+                dataLoader.loadCopyNumberGeneCentricData(file);
+                long endTime = System.nanoTime();
+                long execTime_nano = endTime - startTime;
+                log.info("loadCopyNumberGeneCentricData() finished; execution time: " +
+                        TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
+            }
+            catch ( IOException e ) {
+                System.err.println("Exception occurred: If execution is timed for this method, the result will no be shown.");
+                System.err.println("IOException is caught: " + e.getMessage());
+            }
         }
         else {
             printUsage();

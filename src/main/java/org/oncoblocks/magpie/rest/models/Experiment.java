@@ -15,11 +15,9 @@ public class Experiment {
     private String experimentId;
 
     private String sampleId;
-
     private String experimentType;
     private String description;
-
-    private ArrayList< HashMap<String, String> > attributes;
+    private HashMap<String, String> attributes;
 
     public String getExperimentId() {
         return experimentId;
@@ -35,14 +33,6 @@ public class Experiment {
 
     public void setSampleId(String sampleId) {
         this.sampleId = sampleId;
-    }
-
-    public ArrayList<HashMap<String, String>> getAttributes() {
-        return attributes;
-    }
-
-    public void setAttributes(ArrayList<HashMap<String, String>> attributes) {
-        this.attributes = attributes;
     }
 
     public String getExperimentType() {
@@ -61,6 +51,13 @@ public class Experiment {
         this.description = description;
     }
 
+    public HashMap<String, String> getAttributes() {
+        return attributes;
+    }
+
+    public void setAttributes(HashMap<String, String> attributes) {
+        this.attributes = attributes;
+    }
 
     @Override
     public String toString(){
