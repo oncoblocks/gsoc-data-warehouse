@@ -38,7 +38,7 @@ public class RepositoryTests {
 		cnv.setEntrezGeneId(1);
 		cnv.setSampleId("LOUNH91_LUNG");
 		cnv.setExperimentId("CCLE");
-		cnv.setCopyNumberValue(-0.0259);
+		cnv.setCopyNumberValue(-0.0259f);
 		repository.insert(cnv);
 	}
 	
@@ -54,7 +54,7 @@ public class RepositoryTests {
 		cnv.setEntrezGeneId(1);
 		cnv.setSampleId("LOUNH91_LUNG");
 		cnv.setExperimentId("CCLE");
-		cnv.setCopyNumberValue(-0.0259);
+		cnv.setCopyNumberValue(-0.0259f);
 		repository.insert(cnv);
 
 		long count = repository.count();
@@ -88,7 +88,7 @@ createNewRecord();
 	@Test
 	public void findByEntrezGeneIdTest() throws Exception {
 		createNewRecord();
-		List<CopyNumberGeneCentric> cnv = repository.findByGeneId(1);
+		List<CopyNumberGeneCentric> cnv = repository.findByEntrezGeneId(1);
 		Assert.notNull(cnv);
 		Assert.notEmpty(cnv);
 		System.out.println(cnv.toString());

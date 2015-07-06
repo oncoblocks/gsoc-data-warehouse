@@ -10,6 +10,7 @@
     <packaging>jar</packaging>
 
     <properties>
+        <org.slf4j.simpleLogger.defaultLogLevel>info</org.slf4j.simpleLogger.defaultLogLevel>
         <start-class>org.oncoblocks.magpie.rest.MagpieApplication</start-class>
         <junit.version>4.11</junit.version>
         <java.version>1.7</java.version>
@@ -44,6 +45,12 @@
     </parent>
 
     <dependencies>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
 
         <!--spring-->
 

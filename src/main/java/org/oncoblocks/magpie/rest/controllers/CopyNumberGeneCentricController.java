@@ -44,6 +44,16 @@ public class CopyNumberGeneCentricController {
         }
     }
 
+    @RequestMapping(value="/sampleId/{geneId}", method = RequestMethod.GET)
+    public List<CopyNumberGeneCentric> findCopyNumberGeneCentricBySampleId(@PathVariable("geneId") String sampleId){
+        try{
+            return copyNumberGeneCentricService.findBySampleId(sampleId);
+        }
+        catch(Exception e){
+            return new ArrayList<CopyNumberGeneCentric>();
+        }
+    }
+
     @RequestMapping(value="", method = RequestMethod.GET)
     public List<CopyNumberGeneCentric> find(
             @RequestParam(value = "geneId", required = false) Integer geneId,

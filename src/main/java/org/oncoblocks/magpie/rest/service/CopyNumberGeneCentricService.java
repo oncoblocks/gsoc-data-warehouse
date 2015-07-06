@@ -27,7 +27,11 @@ public class CopyNumberGeneCentricService {
     }
 
     public List<CopyNumberGeneCentric> findByGeneId(Integer geneId) throws Exception {
-        return copyNumberGeneCentricRepositoryImpl.findByGeneId(geneId);
+        return copyNumberGeneCentricRepository.findByEntrezGeneId(geneId);
+    }
+
+    public List<CopyNumberGeneCentric> findBySampleId(String sampleId) throws Exception {
+        return copyNumberGeneCentricRepository.findBySampleId(sampleId);
     }
 
     public CopyNumberGeneCentric save(CopyNumberGeneCentric copyNumberGeneCentric) {

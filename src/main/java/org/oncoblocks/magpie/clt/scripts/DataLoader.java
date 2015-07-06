@@ -8,6 +8,7 @@ import org.oncoblocks.magpie.rest.models.*;
 import org.oncoblocks.magpie.rest.repositories.*;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import javax.xml.crypto.Data;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -17,13 +18,10 @@ import java.util.concurrent.TimeUnit;
 
 public class DataLoader {
 
-    private static final Log log = LogFactory.getLog(DataLoader.class);
+    private static final Log log = LogFactory.getLog(Data.class);
 
     private AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
             ApplicationConfig.class, CltConfiguration.class);
-
-//    private StudyRepository studyRepository = ctx.getBean(StudyRepository.class);
-//    private GeneRepository geneRepository = ctx.getBean(GeneRepository.class);
 
     public void loadStudyData(File file) throws IOException {
 
@@ -136,6 +134,7 @@ public class DataLoader {
             }
             line = buf.readLine();
         }
+
         log.info("Loaded " + sampleCount + " samples.");
         log.info(sampleRepository.count() + " samples records are found in the database.");
     }
@@ -176,8 +175,8 @@ public class DataLoader {
             }
             line = buf.readLine();
         }
-        log.info("Loaded " + cnvCount + " CNV records.");
-        log.info(copyNumberGeneCentricRepository.count() + " CNV records are found in the database.");
+        //log.info("Loaded " + cnvCount + " CNV records.");
+        //log.info(copyNumberGeneCentricRepository.count() + " CNV records are found in the database.");
     }
 
 
@@ -234,8 +233,8 @@ public class DataLoader {
             }
             line = buf.readLine();
         }
-        log.info("Loaded " + geneCount + " genes.");
-        log.info(geneRepository.count() + " gene records are found in the database.");
+        //log.info("Loaded " + geneCount + " genes.");
+        //log.info(geneRepository.count() + " gene records are found in the database.");
     }
 
     private static void printUsage(){
