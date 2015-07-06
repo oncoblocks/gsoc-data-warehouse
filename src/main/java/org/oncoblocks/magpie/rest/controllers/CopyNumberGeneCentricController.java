@@ -3,7 +3,10 @@ package org.oncoblocks.magpie.rest.controllers;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,6 +22,8 @@ import org.oncoblocks.magpie.rest.service.CopyNumberGeneCentricService;
 @RestController
 @RequestMapping("/copynumbergenecentric")
 public class CopyNumberGeneCentricController {
+
+    private static final Log log = LogFactory.getLog(CopyNumberGeneCentricController.class);
 
     @Autowired
     private CopyNumberGeneCentricService copyNumberGeneCentricService;
@@ -37,7 +42,13 @@ public class CopyNumberGeneCentricController {
     @RequestMapping(value="/geneId/{geneId}", method = RequestMethod.GET)
     public List<CopyNumberGeneCentric> findCopyNumberGeneCentricByGeneId(@PathVariable("geneId") Integer geneId){
         try{
-            return copyNumberGeneCentricService.findByGeneId(geneId);
+            long startTime = System.nanoTime();
+            List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findByGeneId(geneId);
+            long endTime = System.nanoTime();
+            long execTime_nano = endTime - startTime;
+            log.info("findCopyNumberGeneCentricByGeneId() query finished; execution time: " +
+                    TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
+            return queryResult;
         }
         catch(Exception e){
             return new ArrayList<CopyNumberGeneCentric>();
@@ -47,7 +58,14 @@ public class CopyNumberGeneCentricController {
     @RequestMapping(value="/sampleId/{geneId}", method = RequestMethod.GET)
     public List<CopyNumberGeneCentric> findCopyNumberGeneCentricBySampleId(@PathVariable("geneId") String sampleId){
         try{
-            return copyNumberGeneCentricService.findBySampleId(sampleId);
+            long startTime = System.nanoTime();
+            List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findBySampleId(sampleId);
+            long endTime = System.nanoTime();
+            long execTime_nano = endTime - startTime;
+            log.info("findCopyNumberGeneCentricBySampleId() query finished; execution time: " +
+                    TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
+
+            return queryResult;
         }
         catch(Exception e){
             return new ArrayList<CopyNumberGeneCentric>();
@@ -55,17 +73,24 @@ public class CopyNumberGeneCentricController {
     }
 
     @RequestMapping(value="", method = RequestMethod.GET)
-    public List<CopyNumberGeneCentric> find(
+    public List<CopyNumberGeneCentric> findCopyNumberGeneCentric(
             @RequestParam(value = "geneId", required = false) Integer geneId,
             @RequestParam(value = "sampleId", required = false) String sampleId
     ){
         try{
+            long startTime = System.nanoTime();
+
             HashMap<String, String> param = new HashMap<>();
             String geneIdString = Integer.toString(geneId);
             param.put("geneId", geneIdString);
             param.put("sampleId", sampleId);
+            List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.find(param);
+            long endTime = System.nanoTime();
+            long execTime_nano = endTime - startTime;
+            log.info("findCopyNumberGeneCentric() query finished; execution time: " +
+                    TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
 
-            return copyNumberGeneCentricService.find(param);
+            return queryResult;
         }
         catch(Exception e){
             return new ArrayList<CopyNumberGeneCentric>();
