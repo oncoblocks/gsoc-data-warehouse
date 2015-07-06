@@ -12,6 +12,7 @@ import org.springframework.data.mongodb.core.query.CriteriaDefinition;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -32,16 +33,25 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
     }
 
     public List<CopyNumberGeneCentric> find(HashMap<String, String> param) throws Exception {
-        Criteria criteria = new Criteria();
+        List<Criteria> criteriaList = new ArrayList<>();
 
-        Integer geneId = Integer.parseInt( param.get("geneId") );
-        if ( geneId != null ) {
-            criteria = criteria.where("entrezGeneId").is(geneId);
+        if ( param.get("geneId") != null) {
+            Integer geneId = Integer.parseInt(param.get("geneId"));
+
+            if (geneId != null) {
+                criteriaList.add(Criteria.where("entrezGeneId").is(geneId));
+            }
         }
+
         String sampleId = param.get("sampleId");
         if ( sampleId != null ) {
-            criteria = criteria.and("sampleId").regex(sampleId, "i");
+            criteriaList.add( Criteria.where("sampleId").regex(sampleId, "i") );
         }
+
+        log.info("Number of criteria in this query is:" + criteriaList.size());
+
+        Criteria criteria = new Criteria();
+        criteria = criteria.andOperator( criteriaList.toArray( new Criteria[ criteriaList.size() ] ) );
 
         Query query = new Query(criteria);
         return mongoTemplate.find(query, CopyNumberGeneCentric.class);

@@ -79,10 +79,11 @@ public class CopyNumberGeneCentricController {
     ){
         try{
             long startTime = System.nanoTime();
-
             HashMap<String, String> param = new HashMap<>();
-            String geneIdString = Integer.toString(geneId);
-            param.put("geneId", geneIdString);
+            if (geneId != null) {
+                String geneIdString = Integer.toString(geneId);
+                param.put("geneId", geneIdString);
+            }
             param.put("sampleId", sampleId);
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.find(param);
             long endTime = System.nanoTime();
@@ -93,6 +94,7 @@ public class CopyNumberGeneCentricController {
             return queryResult;
         }
         catch(Exception e){
+            log.error("Exception caught: " + e.getMessage());
             return new ArrayList<CopyNumberGeneCentric>();
         }
     }
