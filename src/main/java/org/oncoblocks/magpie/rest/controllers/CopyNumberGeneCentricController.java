@@ -55,8 +55,8 @@ public class CopyNumberGeneCentricController {
         }
     }
 
-    @RequestMapping(value="/sampleId/{geneId}", method = RequestMethod.GET)
-    public List<CopyNumberGeneCentric> findCopyNumberGeneCentricBySampleId(@PathVariable("geneId") String sampleId){
+    @RequestMapping(value="/sampleId/{sampleId}", method = RequestMethod.GET)
+    public List<CopyNumberGeneCentric> findCopyNumberGeneCentricBySampleId(@PathVariable("sampleId") String sampleId){
         try{
             long startTime = System.nanoTime();
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findBySampleId(sampleId);

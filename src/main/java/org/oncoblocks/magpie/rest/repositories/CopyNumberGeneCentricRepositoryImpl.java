@@ -36,7 +36,7 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
 
         Integer geneId = Integer.parseInt( param.get("geneId") );
         if ( geneId != null ) {
-            criteria = criteria.where("geneId").is(geneId);
+            criteria = criteria.where("entrezGeneId").is(geneId);
         }
         String sampleId = param.get("sampleId");
         if ( sampleId != null ) {
