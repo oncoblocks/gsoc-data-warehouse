@@ -40,7 +40,7 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
         }
         String sampleId = param.get("sampleId");
         if ( sampleId != null ) {
-            criteria = criteria.where("sampleId").regex(sampleId, "i");
+            criteria = criteria.and("sampleId").regex(sampleId, "i");
         }
 
         Query query = new Query(criteria);
