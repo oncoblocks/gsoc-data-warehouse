@@ -80,7 +80,9 @@ public class CopyNumberGeneCentricController {
     @RequestMapping(value="", method = {RequestMethod.GET, RequestMethod.HEAD})
     public ResponseEntity< List<CopyNumberGeneCentric> > findCopyNumberGeneCentric(
             @RequestParam(value = "geneId", required = false) Integer geneId,
-            @RequestParam(value = "sampleId", required = false) String sampleId
+            @RequestParam(value = "sampleId", required = false) String sampleId,
+            @RequestParam(value = "fields", required = false) String fields
+
     ){
         try{
             long startTime = System.nanoTime();
@@ -90,6 +92,8 @@ public class CopyNumberGeneCentricController {
                 param.put("geneId", geneIdString);
             }
             param.put("sampleId", sampleId);
+            param.put("fields", fields);
+
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.find(param);
             long endTime = System.nanoTime();
             long execTime_nano = endTime - startTime;

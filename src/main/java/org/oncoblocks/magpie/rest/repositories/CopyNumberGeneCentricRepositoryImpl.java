@@ -13,6 +13,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -54,6 +55,14 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
         criteria = criteria.andOperator( criteriaList.toArray( new Criteria[ criteriaList.size() ] ) );
 
         Query query = new Query(criteria);
+
+        String fieldsStr = param.get("fields");
+        if ( fieldsStr != null ) {
+            List<String> fields = Arrays.asList(fieldsStr.split(","));
+            for ( String field : fields) {
+                query.fields().include(field);
+            }
+        }
         return mongoTemplate.find(query, CopyNumberGeneCentric.class);
     }
 
