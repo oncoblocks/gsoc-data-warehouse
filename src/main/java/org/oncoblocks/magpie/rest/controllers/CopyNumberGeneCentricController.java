@@ -97,7 +97,7 @@ public class CopyNumberGeneCentricController {
                     TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
 
             HttpHeaders responseHeaders = new HttpHeaders();
-            responseHeaders.set( "Query time", Long.toString(execTime_nano/1000) + "ms" );
+            responseHeaders.set( "Query time", Long.toString(execTime_nano/1000000) + "ms" );
             return new ResponseEntity<List<CopyNumberGeneCentric>>(queryResult,
                     responseHeaders, HttpStatus.OK);
         }
