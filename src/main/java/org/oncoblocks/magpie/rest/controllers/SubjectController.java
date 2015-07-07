@@ -19,7 +19,7 @@ public class SubjectController {
     @Autowired
     private SubjectService subjectService;
 
-    @RequestMapping(value="", method = RequestMethod.GET)
+    @RequestMapping(value="", method = {RequestMethod.GET, RequestMethod.HEAD})
     public List<Subject> find(
             @RequestParam(value = "gender", required = false) String gender,
             @RequestParam(value = "cellLinePrimarySite", required = false) String cellLinePrimarySite,

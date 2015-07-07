@@ -8,6 +8,9 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,7 +31,7 @@ public class CopyNumberGeneCentricController {
     @Autowired
     private CopyNumberGeneCentricService copyNumberGeneCentricService;
 
-    @RequestMapping(value="/all", method = RequestMethod.GET)
+    @RequestMapping(value="/all", method = {RequestMethod.GET, RequestMethod.HEAD})
     public Iterable<CopyNumberGeneCentric> findAll(){
 
         try{
@@ -39,8 +42,8 @@ public class CopyNumberGeneCentricController {
         }
     }
 
-    @RequestMapping(value="/geneId/{geneId}", method = RequestMethod.GET)
-    public List<CopyNumberGeneCentric> findCopyNumberGeneCentricByGeneId(@PathVariable("geneId") Integer geneId){
+    @RequestMapping(value="/geneId/{geneId}", method = {RequestMethod.GET, RequestMethod.HEAD})
+    public ResponseEntity<List<CopyNumberGeneCentric>> findCopyNumberGeneCentricByGeneId(@PathVariable("geneId") Integer geneId){
         try{
             long startTime = System.nanoTime();
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findByGeneId(geneId);
@@ -48,14 +51,16 @@ public class CopyNumberGeneCentricController {
             long execTime_nano = endTime - startTime;
             log.info("findCopyNumberGeneCentricByGeneId() query finished; execution time: " +
                     TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
-            return queryResult;
-        }
+            HttpHeaders responseHeaders = new HttpHeaders();
+            responseHeaders.set( "Query time", Long.toString(execTime_nano*1000) + "ms" );
+            return new ResponseEntity<List<CopyNumberGeneCentric>>(queryResult,
+                    responseHeaders, HttpStatus.OK);        }
         catch(Exception e){
-            return new ArrayList<CopyNumberGeneCentric>();
+            return null;
         }
     }
 
-    @RequestMapping(value="/sampleId/{sampleId}", method = RequestMethod.GET)
+    @RequestMapping(value="/sampleId/{sampleId}", method = {RequestMethod.GET, RequestMethod.HEAD})
     public List<CopyNumberGeneCentric> findCopyNumberGeneCentricBySampleId(@PathVariable("sampleId") String sampleId){
         try{
             long startTime = System.nanoTime();
@@ -72,8 +77,8 @@ public class CopyNumberGeneCentricController {
         }
     }
 
-    @RequestMapping(value="", method = RequestMethod.GET)
-    public List<CopyNumberGeneCentric> findCopyNumberGeneCentric(
+    @RequestMapping(value="", method = {RequestMethod.GET, RequestMethod.HEAD})
+    public ResponseEntity< List<CopyNumberGeneCentric> > findCopyNumberGeneCentric(
             @RequestParam(value = "geneId", required = false) Integer geneId,
             @RequestParam(value = "sampleId", required = false) String sampleId
     ){
@@ -91,11 +96,14 @@ public class CopyNumberGeneCentricController {
             log.info("findCopyNumberGeneCentric() query finished; execution time: " +
                     TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
 
-            return queryResult;
+            HttpHeaders responseHeaders = new HttpHeaders();
+            responseHeaders.set( "Query time", Long.toString(execTime_nano/1000) + "ms" );
+            return new ResponseEntity<List<CopyNumberGeneCentric>>(queryResult,
+                    responseHeaders, HttpStatus.OK);
         }
         catch(Exception e){
             log.error("Exception caught: " + e.getMessage());
-            return new ArrayList<CopyNumberGeneCentric>();
+            return null;
         }
     }
 }

@@ -16,7 +16,7 @@ public class SampleController {
     @Autowired
     private SampleService sampleService;
 
-    @RequestMapping(value="", method = RequestMethod.GET)
+    @RequestMapping(value="", method = {RequestMethod.GET, RequestMethod.HEAD})
     public List<Sample> findByCellLineOrigin(@RequestParam(value = "cellLineOrigin") String cellLineOrigin)  {
         try {
             return sampleService.findByCellLineOriginIgnoreCase(cellLineOrigin);
@@ -26,7 +26,7 @@ public class SampleController {
         }
     }
 
-    @RequestMapping(value="/sampleId/{sampleId}", method = RequestMethod.GET)
+    @RequestMapping(value="/{sampleId}", method = {RequestMethod.GET, RequestMethod.HEAD})
     public Sample findById(@PathVariable("sampleId") String sampleId) {
         try {
             return sampleService.findById(sampleId);
