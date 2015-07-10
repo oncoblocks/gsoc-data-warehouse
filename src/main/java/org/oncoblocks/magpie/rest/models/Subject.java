@@ -5,14 +5,19 @@ import java.util.HashMap;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.log4j.spi.LoggerFactory;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import javax.xml.crypto.Data;
 
 @Document(collection = "subject")
 public class Subject {
 
     // Common attributes
-
+    private static final Log log = LogFactory.getLog(Subject.class);
 
     @Id
     private String subjectId;
@@ -20,14 +25,6 @@ public class Subject {
     private String subjectType;
     private String gender;
     private HashMap<String, String> attributes;
-
-    // Cell line-specific attributes
-//    private String cellLineSourceName;
-//    private ArrayList<String> cellLineAliases;
-//    private String cellLinePrimarySite;
-//    private String cellLineHistology;
-
-    // Patient-specific attributes to be added
 
     public String getSubjectId() {
         return subjectId;
