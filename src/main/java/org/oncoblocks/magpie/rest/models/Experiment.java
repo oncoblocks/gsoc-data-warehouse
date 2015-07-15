@@ -14,9 +14,11 @@ public class Experiment {
     @Id
     private String experimentId;
 
-    private String sampleId;
     private String experimentType;
     private String description;
+    private String dataFile;
+    private String dateAccessed;
+
     private HashMap<String, String> attributes;
 
     public String getExperimentId() {
@@ -25,14 +27,6 @@ public class Experiment {
 
     public void setExperimentId(String experimentId) {
         this.experimentId = experimentId;
-    }
-
-    public String getSampleId() {
-        return sampleId;
-    }
-
-    public void setSampleId(String sampleId) {
-        this.sampleId = sampleId;
     }
 
     public String getExperimentType() {
@@ -58,6 +52,23 @@ public class Experiment {
     public void setAttributes(HashMap<String, String> attributes) {
         this.attributes = attributes;
     }
+
+    public String getDataFile() {
+        return dataFile;
+    }
+
+    public void setDataFile(String dataFile) {
+        this.dataFile = dataFile;
+    }
+
+    public String getDateAccessed() {
+        return dateAccessed;
+    }
+
+    public void setDateAccessed(String dateAccessed) {
+        this.dateAccessed = dateAccessed;
+    }
+
 
     @Override
     public String toString(){

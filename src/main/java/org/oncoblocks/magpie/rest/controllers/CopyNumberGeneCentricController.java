@@ -1,5 +1,6 @@
 package org.oncoblocks.magpie.rest.controllers;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
@@ -7,7 +8,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.oncoblocks.magpie.rest.util.Url;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.*;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,8 +19,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.PathVariable;
-
-
 
 import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
 import org.oncoblocks.magpie.rest.service.CopyNumberGeneCentricService;
@@ -38,7 +39,23 @@ public class CopyNumberGeneCentricController {
             return copyNumberGeneCentricService.findAll();
         }
         catch(Exception e){
-            return new ArrayList<CopyNumberGeneCentric>();
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
+    }
+
+    @RequestMapping(value="/viewpage", method = {RequestMethod.GET, RequestMethod.HEAD})
+    public Page<CopyNumberGeneCentric> findPage
+            (@RequestParam(value = "page", required = false, defaultValue = "0") Integer page,
+             @RequestParam(value = "size", required = false, defaultValue = "10") Integer size,
+             @RequestParam(value = "sort", required = false) List<String> sortList){
+        try{
+
+            return copyNumberGeneCentricService.findPage(Url.parsePageRequest(page, size, sortList));
+        }
+        catch(Exception e){
+            e.printStackTrace();
+            return new PageImpl<>(new ArrayList<CopyNumberGeneCentric>());
         }
     }
 
@@ -110,5 +127,6 @@ public class CopyNumberGeneCentricController {
             return null;
         }
     }
+
 }
 

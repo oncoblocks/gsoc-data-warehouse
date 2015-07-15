@@ -43,5 +43,5 @@ public class CellLine extends Subject {
     public void setCellLineHistology(String cellLineHistology) {
         this.cellLineHistology = cellLineHistology;
     }
-    
+
 }

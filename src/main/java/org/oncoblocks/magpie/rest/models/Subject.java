@@ -59,7 +59,7 @@ public class Subject {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         return gson.toJson(this);
     }

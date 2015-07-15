@@ -6,6 +6,8 @@ import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
 import org.oncoblocks.magpie.rest.repositories.CopyNumberGeneCentricRepository;
 import org.oncoblocks.magpie.rest.repositories.CopyNumberGeneCentricRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -41,5 +43,9 @@ public class CopyNumberGeneCentricService {
 
     public List<CopyNumberGeneCentric> find(HashMap<String, String> param) throws Exception {
         return copyNumberGeneCentricRepositoryImpl.find(param);
+    }
+
+    public Page<CopyNumberGeneCentric> findPage(Pageable pageable) throws Exception {
+        return copyNumberGeneCentricRepository.findAll(pageable);
     }
 }

@@ -62,6 +62,38 @@ public class DataLoader {
 
     }
 
+    public void loadPatientData(File file) throws IOException {
+
+        SubjectRepository subjectRepository = ctx.getBean(SubjectRepository.class);
+        if (subjectRepository.count() > 0) {
+            subjectRepository.deleteAll();
+        }
+
+        FileReader fileReader = new FileReader(file);
+        BufferedReader buf = new BufferedReader(fileReader);
+        String line = buf.readLine();
+        int subjectCount = 0;
+        String subjectType = "patient";
+        while (line != null) {
+            if ( !line.startsWith("#") ) {
+                // Parse a line of gene record
+                String fields[] = line.split("\t");
+
+                Patient patient = new Patient();
+
+                patient.setSubjectId(fields[0]);
+                patient.setSubjectType(subjectType);
+
+                subjectRepository.insert(patient);
+                ++subjectCount;
+            }
+            line = buf.readLine();
+        }
+        log.info("Loaded " + subjectCount + " subjects.");
+        log.info(subjectRepository.count() + " subjects records are found in the database.");
+    }
+
+
     public void loadCellLineData(File file) throws IOException {
 
         SubjectRepository subjectRepository = ctx.getBean(SubjectRepository.class);
@@ -137,6 +169,53 @@ public class DataLoader {
 
         log.info("Loaded " + sampleCount + " samples.");
         log.info(sampleRepository.count() + " samples records are found in the database.");
+    }
+
+    public void loadExperimentData(File file) throws IOException {
+
+        ExperimentRepository experimentRepository = this.ctx.getBean(ExperimentRepository.class);
+
+        if (experimentRepository.count() > 0) {
+            experimentRepository.deleteAll();
+        }
+
+        String experimentId;
+        String experimentType;
+        String description;
+        String dataFile;
+        String dateAccessed;
+
+        FileReader fileReader = new FileReader(file);
+        BufferedReader buf = new BufferedReader(fileReader);
+        String line = buf.readLine();
+        int experimentCount = 0;
+
+        while (line != null) {
+            if (!line.startsWith("#")) {
+                // Parse a line of study record
+                String fields[] = line.split("\t");
+
+                experimentId = fields[0];
+                experimentType = fields[1];
+                description = fields[2];
+                dataFile = fields[3];
+                dateAccessed = fields[4];
+
+                Experiment experiment = new Experiment();
+                experiment.setExperimentId(experimentId);
+                experiment.setExperimentType(experimentType);
+                experiment.setDescription(description);
+                experiment.setDataFile(dataFile);
+                experiment.setDateAccessed(dateAccessed);
+
+                experimentRepository.insert(experiment);
+                ++experimentCount;
+            }
+            line = buf.readLine();
+        }
+        log.info("Loaded " + experimentCount + " studies.");
+        log.info(experimentRepository.count() + " study records are found in the database.");
+
     }
 
     public void loadCopyNumberGeneCentricData(File file) throws IOException {
@@ -233,8 +312,8 @@ public class DataLoader {
             }
             line = buf.readLine();
         }
-        //log.info("Loaded " + geneCount + " genes.");
-        //log.info(geneRepository.count() + " gene records are found in the database.");
+        log.info("Loaded " + geneCount + " genes.");
+        log.info(geneRepository.count() + " gene records are found in the database.");
     }
 
     private static void printUsage(){
@@ -280,6 +359,9 @@ public class DataLoader {
                 System.err.println("Exception occurred: If execution is timed for this method, the result will no be shown.");
                 System.err.println("IOException is caught: " + e.getMessage());
             }
+        }
+        else if ( dataType.equals("experiment")) {
+            dataLoader.loadExperimentData(file);
         }
         else {
             printUsage();
