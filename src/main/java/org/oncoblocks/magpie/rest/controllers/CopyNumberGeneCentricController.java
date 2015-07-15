@@ -1,6 +1,5 @@
 package org.oncoblocks.magpie.rest.controllers;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
@@ -33,34 +32,40 @@ public class CopyNumberGeneCentricController {
     private CopyNumberGeneCentricService copyNumberGeneCentricService;
 
     @RequestMapping(value="/all", method = {RequestMethod.GET, RequestMethod.HEAD})
-    public Iterable<CopyNumberGeneCentric> findAll(){
-
+    public ResponseEntity<Iterable<CopyNumberGeneCentric>> findAll(){
+        HttpHeaders responseHeaders = new HttpHeaders();
         try{
-            return copyNumberGeneCentricService.findAll();
+            Iterable<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findAll();
+            return new ResponseEntity<>(queryResult, HttpStatus.OK);
         }
         catch(Exception e){
             e.printStackTrace();
-            return new ArrayList<>();
+            responseHeaders.set("Error message", e.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
 
     @RequestMapping(value="/viewpage", method = {RequestMethod.GET, RequestMethod.HEAD})
-    public Page<CopyNumberGeneCentric> findPage
+    public ResponseEntity<Page<CopyNumberGeneCentric>> findPage
             (@RequestParam(value = "page", required = false, defaultValue = "0") Integer page,
              @RequestParam(value = "size", required = false, defaultValue = "10") Integer size,
              @RequestParam(value = "sort", required = false) List<String> sortList){
-        try{
 
-            return copyNumberGeneCentricService.findPage(Url.parsePageRequest(page, size, sortList));
+        HttpHeaders responseHeaders = new HttpHeaders();
+        try{
+            Page<CopyNumberGeneCentric> resultPage = copyNumberGeneCentricService.findPage(Url.parsePageRequest(page, size, sortList));
+            return new ResponseEntity<>(resultPage, HttpStatus.OK);
         }
         catch(Exception e){
             e.printStackTrace();
-            return new PageImpl<>(new ArrayList<CopyNumberGeneCentric>());
+            responseHeaders.set("Error message", e.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
 
     @RequestMapping(value="/geneId/{geneId}", method = {RequestMethod.GET, RequestMethod.HEAD})
     public ResponseEntity<List<CopyNumberGeneCentric>> findCopyNumberGeneCentricByGeneId(@PathVariable("geneId") Integer geneId){
+        HttpHeaders responseHeaders = new HttpHeaders();
         try{
             long startTime = System.nanoTime();
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findByGeneId(geneId);
@@ -68,17 +73,18 @@ public class CopyNumberGeneCentricController {
             long execTime_nano = endTime - startTime;
             log.info("findCopyNumberGeneCentricByGeneId() query finished; execution time: " +
                     TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
-            HttpHeaders responseHeaders = new HttpHeaders();
             responseHeaders.set( "Query time", Long.toString(execTime_nano*1000) + "ms" );
-            return new ResponseEntity<List<CopyNumberGeneCentric>>(queryResult,
-                    responseHeaders, HttpStatus.OK);        }
-        catch(Exception e){
-            return null;
+            return new ResponseEntity<>(queryResult, responseHeaders, HttpStatus.OK);
         }
+        catch(Exception e){
+            e.printStackTrace();
+            responseHeaders.set("Error message", e.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);        }
     }
 
     @RequestMapping(value="/sampleId/{sampleId}", method = {RequestMethod.GET, RequestMethod.HEAD})
-    public List<CopyNumberGeneCentric> findCopyNumberGeneCentricBySampleId(@PathVariable("sampleId") String sampleId){
+    public ResponseEntity<List<CopyNumberGeneCentric>> findCopyNumberGeneCentricBySampleId(@PathVariable("sampleId") String sampleId){
+        HttpHeaders responseHeaders = new HttpHeaders();
         try{
             long startTime = System.nanoTime();
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findBySampleId(sampleId);
@@ -86,11 +92,14 @@ public class CopyNumberGeneCentricController {
             long execTime_nano = endTime - startTime;
             log.info("findCopyNumberGeneCentricBySampleId() query finished; execution time: " +
                     TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
+            responseHeaders.set( "Query time", Long.toString(execTime_nano*1000) + "ms" );
 
-            return queryResult;
+            return new ResponseEntity<>(queryResult, responseHeaders, HttpStatus.OK);
         }
         catch(Exception e){
-            return new ArrayList<CopyNumberGeneCentric>();
+            e.printStackTrace();
+            responseHeaders.set("Error message", e.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
 
@@ -101,6 +110,7 @@ public class CopyNumberGeneCentricController {
             @RequestParam(value = "fields", required = false) String fields
 
     ){
+        HttpHeaders responseHeaders = new HttpHeaders();
         try{
             long startTime = System.nanoTime();
             HashMap<String, String> param = new HashMap<>();
@@ -117,14 +127,14 @@ public class CopyNumberGeneCentricController {
             log.info("findCopyNumberGeneCentric() query finished; execution time: " +
                     TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
 
-            HttpHeaders responseHeaders = new HttpHeaders();
             responseHeaders.set( "Query time", Long.toString(execTime_nano/1000000) + "ms" );
             return new ResponseEntity<List<CopyNumberGeneCentric>>(queryResult,
                     responseHeaders, HttpStatus.OK);
         }
         catch(Exception e){
-            log.error("Exception caught: " + e.getMessage());
-            return null;
+            e.printStackTrace();
+            responseHeaders.set("Error message", e.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
 
