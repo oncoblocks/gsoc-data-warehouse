@@ -2,8 +2,6 @@ package org.oncoblocks.magpie.rest.controllers;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -41,7 +39,7 @@ public class CopyNumberGeneCentricController {
         catch(Exception e){
             e.printStackTrace();
             responseHeaders.set("Error message", e.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(responseHeaders, HttpStatus.BAD_REQUEST);
         }
     }
 
@@ -59,7 +57,7 @@ public class CopyNumberGeneCentricController {
         catch(Exception e){
             e.printStackTrace();
             responseHeaders.set("Error message", e.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(responseHeaders, HttpStatus.BAD_REQUEST);
         }
     }
 
@@ -67,39 +65,27 @@ public class CopyNumberGeneCentricController {
     public ResponseEntity<List<CopyNumberGeneCentric>> findCopyNumberGeneCentricByGeneId(@PathVariable("geneId") Integer geneId){
         HttpHeaders responseHeaders = new HttpHeaders();
         try{
-            long startTime = System.nanoTime();
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findByGeneId(geneId);
-            long endTime = System.nanoTime();
-            long execTime_nano = endTime - startTime;
-            log.info("findCopyNumberGeneCentricByGeneId() query finished; execution time: " +
-                    TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
-            responseHeaders.set( "Query time", Long.toString(execTime_nano*1000) + "ms" );
             return new ResponseEntity<>(queryResult, responseHeaders, HttpStatus.OK);
         }
         catch(Exception e){
             e.printStackTrace();
             responseHeaders.set("Error message", e.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);        }
+            return new ResponseEntity<>(responseHeaders, HttpStatus.BAD_REQUEST);
+        }
     }
 
     @RequestMapping(value="/sampleId/{sampleId}", method = {RequestMethod.GET, RequestMethod.HEAD})
     public ResponseEntity<List<CopyNumberGeneCentric>> findCopyNumberGeneCentricBySampleId(@PathVariable("sampleId") String sampleId){
         HttpHeaders responseHeaders = new HttpHeaders();
         try{
-            long startTime = System.nanoTime();
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.findBySampleId(sampleId);
-            long endTime = System.nanoTime();
-            long execTime_nano = endTime - startTime;
-            log.info("findCopyNumberGeneCentricBySampleId() query finished; execution time: " +
-                    TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
-            responseHeaders.set( "Query time", Long.toString(execTime_nano*1000) + "ms" );
-
             return new ResponseEntity<>(queryResult, responseHeaders, HttpStatus.OK);
         }
         catch(Exception e){
             e.printStackTrace();
             responseHeaders.set("Error message", e.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(responseHeaders, HttpStatus.BAD_REQUEST);
         }
     }
 
@@ -112,7 +98,6 @@ public class CopyNumberGeneCentricController {
     ){
         HttpHeaders responseHeaders = new HttpHeaders();
         try{
-            long startTime = System.nanoTime();
             HashMap<String, String> param = new HashMap<>();
             if (geneId != null) {
                 String geneIdString = Integer.toString(geneId);
@@ -122,19 +107,13 @@ public class CopyNumberGeneCentricController {
             param.put("fields", fields);
 
             List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.find(param);
-            long endTime = System.nanoTime();
-            long execTime_nano = endTime - startTime;
-            log.info("findCopyNumberGeneCentric() query finished; execution time: " +
-                    TimeUnit.NANOSECONDS.toSeconds(execTime_nano) + "s" + "("  + execTime_nano + "ns)");
-
-            responseHeaders.set( "Query time", Long.toString(execTime_nano/1000000) + "ms" );
-            return new ResponseEntity<List<CopyNumberGeneCentric>>(queryResult,
+            return new ResponseEntity<>(queryResult,
                     responseHeaders, HttpStatus.OK);
         }
         catch(Exception e){
             e.printStackTrace();
             responseHeaders.set("Error message", e.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(responseHeaders, HttpStatus.BAD_REQUEST);
         }
     }
 
