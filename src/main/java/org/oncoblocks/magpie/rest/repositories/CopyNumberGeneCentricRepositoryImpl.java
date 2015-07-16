@@ -1,25 +1,23 @@
 package org.oncoblocks.magpie.rest.repositories;
 
-import com.mongodb.MongoClient;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.CriteriaDefinition;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
+
+import static org.springframework.data.mongodb.core.query.Criteria.where;
+import static org.springframework.data.mongodb.core.query.Query.query;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import static org.springframework.data.mongodb.core.query.Criteria.where;
-import static org.springframework.data.mongodb.core.query.Query.query;
+import org.oncoblocks.magpie.rest.models.CopyNumberGeneCentric;
+import org.oncoblocks.magpie.rest.util.Url;
 
 @Component
 public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentricRepositoryCustom {
@@ -39,16 +37,17 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
 
         if ( param.get("geneId") != null) {
             Integer geneId = Integer.parseInt(param.get("geneId"));
-
-            if (geneId != null) {
+            if (geneId != null)
                 criteriaList.add(Criteria.where("entrezGeneId").is(geneId));
-            }
         }
 
         String sampleId = param.get("sampleId");
-        if ( sampleId != null ) {
+        if ( sampleId != null )
             criteriaList.add( Criteria.where("sampleId").regex(sampleId, "i") );
-        }
+
+        String cnvValue = param.get("cnvValue");
+        if ( cnvValue != null )
+            criteriaList.add( Url.parseFloatQuery(cnvValue, "copyNumberValue") );
 
         log.info("Number of criteria in this query is:" + criteriaList.size());
 
@@ -60,9 +59,8 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
         String fieldsStr = param.get("fields");
         if ( fieldsStr != null ) {
             List<String> fields = Arrays.asList(fieldsStr.split(","));
-            for ( String field : fields) {
+            for ( String field : fields)
                 query.fields().include(field);
-            }
         }
         return mongoTemplate.find(query, CopyNumberGeneCentric.class);
     }
