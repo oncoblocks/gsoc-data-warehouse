@@ -248,14 +248,15 @@ public class DataLoader {
                 cnv.setEntrezGeneId(entrezGeneId);
                 cnv.setSampleId(sampleId);
                 cnv.setCopyNumberValue(cnvValue);
+                cnv.setExperimentId("ccle_cnv_byGene");
 
                 copyNumberGeneCentricRepository.insert(cnv);
                 ++cnvCount;
             }
             line = buf.readLine();
         }
-        //log.info("Loaded " + cnvCount + " CNV records.");
-        //log.info(copyNumberGeneCentricRepository.count() + " CNV records are found in the database.");
+        log.info("Loaded " + cnvCount + " CNV records.");
+        log.info(copyNumberGeneCentricRepository.count() + " CNV records are found in the database.");
     }
 
 
