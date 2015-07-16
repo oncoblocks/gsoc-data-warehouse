@@ -93,8 +93,8 @@ public class CopyNumberGeneCentricController {
     public ResponseEntity< List<CopyNumberGeneCentric> > findCopyNumberGeneCentric(
             @RequestParam(value = "geneId", required = false) Integer geneId,
             @RequestParam(value = "sampleId", required = false) String sampleId,
-            @RequestParam(value = "fields", required = false) String fields
-
+            @RequestParam(value = "fields", required = false) String fields,
+            @RequestParam(value = "sort", required = false) List<String> sortList
     ){
         HttpHeaders responseHeaders = new HttpHeaders();
         try{
@@ -106,7 +106,7 @@ public class CopyNumberGeneCentricController {
             param.put("sampleId", sampleId);
             param.put("fields", fields);
 
-            List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.find(param);
+            List<CopyNumberGeneCentric> queryResult = copyNumberGeneCentricService.find(param, sortList);
             return new ResponseEntity<>(queryResult,
                     responseHeaders, HttpStatus.OK);
         }

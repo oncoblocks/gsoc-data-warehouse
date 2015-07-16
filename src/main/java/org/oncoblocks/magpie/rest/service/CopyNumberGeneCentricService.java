@@ -41,8 +41,8 @@ public class CopyNumberGeneCentricService {
         return copyNumberGeneCentric;
     }
 
-    public List<CopyNumberGeneCentric> find(HashMap<String, String> param) throws Exception {
-        return copyNumberGeneCentricRepositoryImpl.find(param);
+    public List<CopyNumberGeneCentric> find(HashMap<String, String> param, List<String> sortList) throws Exception {
+        return copyNumberGeneCentricRepositoryImpl.find(param, sortList);
     }
 
     public Page<CopyNumberGeneCentric> findPage(Pageable pageable) throws Exception {

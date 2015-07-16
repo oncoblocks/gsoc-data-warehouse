@@ -28,6 +28,24 @@ public class Url {
             throw new IllegalArgumentException("Incorrect sort criterion format; example: \"sort=entrezGeneId:asc\"");
     }
 
+    public static Sort sortFromList (List<String> sortList) {
+        List<Sort.Order> orders= new ArrayList<>();
+        if (sortList != null) {
+            for (String sortStr : sortList)
+                orders.add(Url.parseSort(sortStr));
+            return new Sort(orders);
+        }
+        else
+            return null;
+    }
+
+    public static PageRequest parsePageRequest (Integer page, Integer size, List<String> sortList) {
+        if (sortList != null)
+            return new PageRequest(page, size, sortFromList(sortList));
+        else
+            return new PageRequest(page, size);
+    }
+
     public static Criteria parseFloatQuery(String criteriaStr, String key) throws IllegalArgumentException {
         String[] pair = criteriaStr.split(":");
         Criteria criteria = Criteria.where(key);
@@ -48,16 +66,5 @@ public class Url {
         return criteria;
     }
 
-    public static PageRequest parsePageRequest (Integer page, Integer size, List<String> sortList) {
-        List<Sort.Order> orders= new ArrayList<>();
-        if (sortList != null) {
-            for (String sortStr : sortList)
-                orders.add(Url.parseSort(sortStr));
-            Sort sort = new Sort(orders);
-            return new PageRequest(page, size, sort);
 
-        }
-        else
-            return new PageRequest(page, size);
-    }
 }

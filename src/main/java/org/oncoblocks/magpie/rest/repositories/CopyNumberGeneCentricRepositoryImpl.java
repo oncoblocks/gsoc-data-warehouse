@@ -3,6 +3,7 @@ package org.oncoblocks.magpie.rest.repositories;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -32,8 +33,9 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
         return mongoTemplate.find( query( where("entrezGeneId").is(geneId) ), CopyNumberGeneCentric.class, COLLECTION_NAME );
     }
 
-    public List<CopyNumberGeneCentric> find(HashMap<String, String> param) throws Exception {
+    public List<CopyNumberGeneCentric> find(HashMap<String, String> param, List<String> sortList) throws Exception {
         List<Criteria> criteriaList = new ArrayList<>();
+        Sort sort;
 
         if ( param.get("geneId") != null) {
             Integer geneId = Integer.parseInt(param.get("geneId"));
@@ -55,6 +57,11 @@ public class CopyNumberGeneCentricRepositoryImpl implements CopyNumberGeneCentri
         criteria = criteria.andOperator( criteriaList.toArray( new Criteria[ criteriaList.size() ] ) );
 
         Query query = new Query(criteria);
+
+        if ( sortList != null ) {
+            sort = Url.sortFromList(sortList);
+            query = query.with(sort);
+        }
 
         String fieldsStr = param.get("fields");
         if ( fieldsStr != null ) {
