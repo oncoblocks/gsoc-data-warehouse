@@ -1,3 +1,7 @@
+/*
+ * Utility routines for extracting information from query URLs
+ */
+
 package org.oncoblocks.magpie.rest.util;
 
 import org.springframework.data.domain.PageRequest;
@@ -65,6 +69,4 @@ public class Url {
             throw new IllegalArgumentException("Incorrect float value criteria format; example: \"value=gt:0.023\"");
         return criteria;
     }
-
-
 }

@@ -6,7 +6,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-
 @Configuration
 @EnableAutoConfiguration//(exclude = { JacksonAutoConfiguration.class })
 @ComponentScan(basePackages = "org.oncoblocks.magpie.rest")
